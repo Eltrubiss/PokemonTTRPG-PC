@@ -13,13 +13,13 @@ export async function buildMoves() {
 
     const moves = [];
 
-    for (let i = 1; i <= list.results.length; i++) {
+    for (const [index, entry] of list.results.entries()) {
 
-        console.log(`Movimiento ${i}/${list.results.length}`);
+        console.log(`Movimiento ${index + 1}/${list.results.length}`);
 
         try {
 
-            const move = await getMove(i);
+            const move = await getMove(entry.url);
 
             const typeData = await getType(move.type.url);
 

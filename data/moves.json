@@ -9188,5 +9188,185 @@
     "power": 100,
     "pres": 100,
     "effect": ""
+  },
+  {
+    "id": 10001,
+    "slug": "shadow-rush",
+    "name": "Carga Oscura",
+    "type": "shadow",
+    "class": "Físico",
+    "power": 55,
+    "pres": 100,
+    "effect": ""
+  },
+  {
+    "id": 10002,
+    "slug": "shadow-blast",
+    "name": "Soplo Oscuro",
+    "type": "shadow",
+    "class": "Físico",
+    "power": 80,
+    "pres": 100,
+    "effect": ""
+  },
+  {
+    "id": 10003,
+    "slug": "shadow-blitz",
+    "name": "Vigor Oscuro",
+    "type": "shadow",
+    "class": "Físico",
+    "power": 40,
+    "pres": 100,
+    "effect": ""
+  },
+  {
+    "id": 10004,
+    "slug": "shadow-bolt",
+    "name": "Rayo Oscuro",
+    "type": "shadow",
+    "class": "Especial",
+    "power": 75,
+    "pres": 100,
+    "effect": ""
+  },
+  {
+    "id": 10005,
+    "slug": "shadow-break",
+    "name": "Brío Oscuro",
+    "type": "shadow",
+    "class": "Físico",
+    "power": 75,
+    "pres": 100,
+    "effect": ""
+  },
+  {
+    "id": 10006,
+    "slug": "shadow-chill",
+    "name": "Hielo Oscuro",
+    "type": "shadow",
+    "class": "Especial",
+    "power": 75,
+    "pres": 100,
+    "effect": ""
+  },
+  {
+    "id": 10007,
+    "slug": "shadow-end",
+    "name": "Fin Oscuro",
+    "type": "shadow",
+    "class": "Físico",
+    "power": 120,
+    "pres": 60,
+    "effect": ""
+  },
+  {
+    "id": 10008,
+    "slug": "shadow-fire",
+    "name": "Fuego Oscuro",
+    "type": "shadow",
+    "class": "Especial",
+    "power": 75,
+    "pres": 100,
+    "effect": ""
+  },
+  {
+    "id": 10009,
+    "slug": "shadow-rave",
+    "name": "Rabia Oscura",
+    "type": "shadow",
+    "class": "Especial",
+    "power": 70,
+    "pres": 100,
+    "effect": ""
+  },
+  {
+    "id": 10010,
+    "slug": "shadow-storm",
+    "name": "Tifón Oscuro",
+    "type": "shadow",
+    "class": "Especial",
+    "power": 95,
+    "pres": 100,
+    "effect": ""
+  },
+  {
+    "id": 10011,
+    "slug": "shadow-wave",
+    "name": "Onda Oscura",
+    "type": "shadow",
+    "class": "Especial",
+    "power": 50,
+    "pres": 100,
+    "effect": ""
+  },
+  {
+    "id": 10012,
+    "slug": "shadow-down",
+    "name": "Ocaso Oscuro",
+    "type": "shadow",
+    "class": "Estado",
+    "power": null,
+    "pres": 100,
+    "effect": ""
+  },
+  {
+    "id": 10013,
+    "slug": "shadow-half",
+    "name": "Mitad Oscura",
+    "type": "shadow",
+    "class": "Especial",
+    "power": null,
+    "pres": 100,
+    "effect": ""
+  },
+  {
+    "id": 10014,
+    "slug": "shadow-hold",
+    "name": "Traba Oscura",
+    "type": "shadow",
+    "class": "Estado",
+    "power": null,
+    "pres": null,
+    "effect": ""
+  },
+  {
+    "id": 10015,
+    "slug": "shadow-mist",
+    "name": "Bruma Oscura",
+    "type": "shadow",
+    "class": "Estado",
+    "power": null,
+    "pres": 100,
+    "effect": ""
+  },
+  {
+    "id": 10016,
+    "slug": "shadow-panic",
+    "name": "Miedo Oscuro",
+    "type": "shadow",
+    "class": "Estado",
+    "power": null,
+    "pres": 90,
+    "effect": ""
+  },
+  {
+    "id": 10017,
+    "slug": "shadow-shed",
+    "name": "Muda Oscura",
+    "type": "shadow",
+    "class": "Estado",
+    "power": null,
+    "pres": null,
+    "effect": ""
+  },
+  {
+    "id": 10018,
+    "slug": "shadow-sky",
+    "name": "Cielo Oscuro",
+    "type": "shadow",
+    "class": "Estado",
+    "power": null,
+    "pres": null,
+    "effect": ""
   }
 ]

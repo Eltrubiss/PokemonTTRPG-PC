@@ -1,12 +1,16 @@
 import fs from "fs/promises";
+import { getSpanishName } from "../lib/translator.js";
+import { buscarEvoluciones } from "../lib/evolution.js";
 
 import {
     getPokemonList,
     getPokemon,
     getSpecies,
     getType,
-    getAbility
+    getAbility,
+    getEvolution
 } from "../lib/api.js";
+
 
 export async function buildPokemon() {
 
@@ -25,12 +29,74 @@ export async function buildPokemon() {
             const poke = await getPokemon(entry.url);
 
             const species = await getSpecies(poke.species.url);
+            const evolutionData = await getEvolution(
+                species.evolution_chain.url
+            );
 
-            // Nombre español
+            const siguientesEvoluciones = buscarEvoluciones(
+                evolutionData.chain,
+                poke.name
+            );
 
-            const nombre =
-                species.names.find(n => n.language.name === "es")?.name ??
-                poke.name;
+        const evoluciones = [];
+
+        for (const siguiente of siguientesEvoluciones) {
+
+            const detalle = siguiente.evolution_details[0];
+
+            const evolucion = {
+
+                id: null,
+
+                slug: siguiente.species.name,
+
+                name: siguiente.species.name,
+
+                metodo: "Especial",
+
+                nivel: null,
+
+                requisito: null
+
+            };
+
+            if (detalle) {
+
+                if (detalle.min_level) {
+
+                    evolucion.metodo = "Nivel";
+
+                    evolucion.nivel = Math.max(
+                        1,
+                        Math.round(detalle.min_level / 5)
+                    );
+
+                }
+
+                else if (detalle.trigger?.name === "trade") {
+
+                    evolucion.metodo = "Intercambio";
+
+                }
+
+                else if (detalle.trigger?.name === "use-item") {
+
+                    evolucion.metodo = "Piedra";
+
+                    evolucion.requisito =
+                        detalle.item?.name ?? null;
+
+                }
+
+            }
+
+            evoluciones.push(evolucion);
+
+        }
+            const nombre = getSpanishName(
+                species.names,
+                poke.name
+            );
 
             // Tipos
 
@@ -40,10 +106,12 @@ export async function buildPokemon() {
 
                 const typeData = await getType(tipo.type.url);
 
-                tipos.push(
-                    typeData.names.find(n => n.language.name === "es")?.name ??
+                const nombreTipo = getSpanishName(                   typeData.names,
+                    typeData.names,
                     tipo.type.name
-                );
+                    );
+                
+                tipos.push(nombreTipo);
 
             }
 
@@ -57,9 +125,10 @@ export async function buildPokemon() {
 
                 const abilityData = await getAbility(habilidad.ability.url);
 
-                const nombreHabilidad =
-                    abilityData.names.find(n => n.language.name === "es")?.name ??
-                    habilidad.ability.name;
+                const nombreHabilidad = getSpanishName(
+                    abilityData.names,
+                    habilidad.ability.name
+                    );
 
                 if (habilidad.is_hidden)
                     habilidadOculta.push(nombreHabilidad);
@@ -103,22 +172,21 @@ export async function buildPokemon() {
                 }
 
             }
+            const nombre = getSpanishName(
+                species.names,
+                poke.name
+            );
 
             pokemon.push({
 
                 id: poke.id,
-
                 slug: poke.name,
-
                 nombre,
-
                 tipo: tipos,
-
                 habilidades,
-
                 habilidad_oculta: habilidadOculta,
-
-                stat_base: stats
+                stat_base: stats,
+                evoluciones
 
             });
 
@@ -131,13 +199,45 @@ export async function buildPokemon() {
         }
 
     }
+    const pokemonPorSlug = new Map();
 
+    for (const poke of pokemon) {
+
+        pokemonPorSlug.set(
+            poke.slug,
+            poke
+        );
+
+    }
+    for (const poke of pokemon) {
+
+        for (const evolucion of poke.evoluciones) {
+
+            const destino = pokemonPorSlug.get(
+                evolucion.slug
+            );
+
+            if (!destino) {
+
+                console.warn(
+                    `No se encontró la evolución "${evolucion.slug}" para ${poke.nombre}`
+                );
+
+                continue;
+            }
+            evolucion.id = destino.id;
+
+            evolucion.name = destino.name;
+
+        }
+
+    }
     pokemon.sort((a, b) => a.id - b.id);
 
     await fs.mkdir("./data", { recursive: true });
 
     await fs.writeFile(
-        "./data/pokemon.json",
+        "./data/generated/pokemon.json",
         JSON.stringify(pokemon, null, 2),
         "utf8"
     );

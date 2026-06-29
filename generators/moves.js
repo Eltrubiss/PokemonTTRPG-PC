@@ -1,5 +1,6 @@
 import fs from "fs/promises";
 import { getMove, getMoveList, getType } from "../lib/api.js";
+import { getSpanishName } from "../lib/translator.js";
 
 const DAMAGE_CLASS = {
     physical: "Físico",
@@ -23,17 +24,20 @@ export async function buildMoves() {
 
             const typeData = await getType(move.type.url);
 
-            const type =
-                typeData.names.find(n => n.language.name === "es")?.name ??
-                move.type.name;
+            const type = getSpanishName(
+                typeData.names,
+                move.type.name
+            );
 
-            const name =
-                move.names.find(n => n.language.name === "es")?.name ??
-                move.name;
+            const name = getSpanishName(
+                move.names,
+                move.name
+            );
 
-            const effect =
-                move.effect_entries.find(e => e.language.name === "es")?.effect ??
-                "";
+            const effect = getSpanishName(
+                move.effect_entries,
+                move.effect
+            );
 
             moves.push({
 
@@ -71,7 +75,7 @@ export async function buildMoves() {
     await fs.mkdir("./data", { recursive: true });
 
     await fs.writeFile(
-        "./data/moves.json",
+        "./data/generated/moves.json",
         JSON.stringify(moves, null, 2),
         "utf8"
     );

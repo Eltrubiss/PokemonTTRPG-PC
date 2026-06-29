@@ -1,6 +1,8 @@
 import fs from "fs/promises";
 import { getSpanishName } from "../lib/translator.js";
 import { buscarEvoluciones } from "../lib/evolution.js";
+import { createConditions } from "../lib/conditions.js";
+import registry from "../lib/registry.js";
 
 import {
     getPokemonList,
@@ -50,13 +52,9 @@ export async function buildPokemon() {
 
                 slug: siguiente.species.name,
 
-                name: siguiente.species.name,
+                nombre: siguiente.species.name,
 
-                metodo: "Especial",
-
-                nivel: null,
-
-                requisito: null
+                condiciones: createConditions()
 
             };
 
@@ -64,9 +62,7 @@ export async function buildPokemon() {
 
                 if (detalle.min_level) {
 
-                    evolucion.metodo = "Nivel";
-
-                    evolucion.nivel = Math.max(
+                    evolucion.condiciones.nivel = Math.max(
                         1,
                         Math.round(detalle.min_level / 5)
                     );
@@ -75,15 +71,13 @@ export async function buildPokemon() {
 
                 else if (detalle.trigger?.name === "trade") {
 
-                    evolucion.metodo = "Intercambio";
+                    evolucion.condiciones.intercambio = true;
 
                 }
 
                 else if (detalle.trigger?.name === "use-item") {
 
-                    evolucion.metodo = "Piedra";
-
-                    evolucion.requisito =
+                    evolucion.condiciones.objeto =
                         detalle.item?.name ?? null;
 
                 }
@@ -106,7 +100,7 @@ export async function buildPokemon() {
 
                 const typeData = await getType(tipo.type.url);
 
-                const nombreTipo = getSpanishName(                   typeData.names,
+                const nombreTipo = getSpanishName(
                     typeData.names,
                     tipo.type.name
                     );
@@ -172,10 +166,6 @@ export async function buildPokemon() {
                 }
 
             }
-            const nombre = getSpanishName(
-                species.names,
-                poke.name
-            );
 
             pokemon.push({
 
@@ -183,12 +173,29 @@ export async function buildPokemon() {
                 slug: poke.name,
                 nombre,
                 tipo: tipos,
-                habilidades,
-                habilidad_oculta: habilidadOculta,
-                stat_base: stats,
-                evoluciones
+                habilidades: {
+                    normales: habilidades,
+                    oculta: habilidadOculta
+                },
+                genero: {
+                    macho: species.gender_rate === -1
+                        ? null
+                        : ((8 - species.gender_rate) / 8) * 100,
+                    hembra: species.gender_rate === -1
+                        ? null
+                        : (species.gender_rate / 8) * 100
 
+                },
+                formas: {
+                },
+                evoluciones,
+                stat_base: stats
             });
+
+            registry.bySpecies.set(
+                species.name,
+                pokemon[pokemon.length - 1]
+            );
 
         }
 
@@ -199,23 +206,36 @@ export async function buildPokemon() {
         }
 
     }
-    const pokemonPorSlug = new Map();
 
     for (const poke of pokemon) {
 
-        pokemonPorSlug.set(
+        registry.byId.set(
+            poke.id,
+            poke
+        );
+
+        registry.bySlug.set(
             poke.slug,
             poke
         );
 
     }
+
     for (const poke of pokemon) {
 
         for (const evolucion of poke.evoluciones) {
 
-            const destino = pokemonPorSlug.get(
+            let destino = registry.bySlug.get(
                 evolucion.slug
             );
+
+            if (!destino) {
+
+                destino = registry.bySpecies.get(
+                    evolucion.slug
+                );
+
+            }
 
             if (!destino) {
 
@@ -227,7 +247,7 @@ export async function buildPokemon() {
             }
             evolucion.id = destino.id;
 
-            evolucion.name = destino.name;
+            evolucion.nombre = destino.nombre;
 
         }
 

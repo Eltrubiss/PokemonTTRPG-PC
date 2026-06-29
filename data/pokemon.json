@@ -1,0 +1,43 @@
+[
+  {
+    "id": 214,
+    "nombre": "Heracross",
+    "tipo": ["Bicho", "Lucha"],
+    "stat_base": { "hp": 80, "atk": 125, "def": 75, "sp_atk": 40, "sp_def": 95, "speed": 85 },
+    "habilidades": ["Enjambre", "Agallas"],
+    "habilidad_oculta": ["Autoestima"],
+    "formas_alternativas": {
+        "Mega Heracross": {
+            "habilidades": ["Encadenado"],
+            "stat_base": { "hp": 80, "atk": 185, "def": 115, "sp_atk": 40, "sp_def": 105, "speed": 75}
+        }
+    }
+  },
+  {
+    "id": 749,
+    "nombre": "Mudbray",
+    "tipo": ["Tierra"],
+    "evolucion": "Mudsdale",
+    "evoXnivel": true,
+    "nivelevolucion": 6,
+    "stat_base": { "hp": 70, "atk": 100, "def": 70, "sp_atk": 45, "sp_def": 55, "speed": 45 },
+    "habilidades": ["Ritmo Propio", "Firmeza"],
+    "habilidad_oculta": ["Fuerza Mental"]
+  },
+  {
+    "id": 750,
+    "nombre": "Mudsdale",
+    "tipo": ["Tierra"]
+  },
+  {
+  "id": 681,
+  "nombre": "Aegislash",
+  "tipo": ["Acero", "Fantasma"],
+  "stat_base": { "hp": 60, "atk": 50, "def": 140, "sp_atk": 50, "sp_def": 140, "speed": 60 },
+  "formas_alternativas": {
+    "Forma Filo": {
+      "stat_base": { "hp": 60, "atk": 140, "def": 50, "sp_atk": 140, "sp_def": 50, "speed": 60 }
+      }
+    }
+  }
+]

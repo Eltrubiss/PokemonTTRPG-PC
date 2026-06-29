@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PC Pokémon - TTRPG</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Gestor de Equipo y Stats</h1>
+    </header>
+
+    <main class="contenedor-principal">
+        <section id="pc-box" class="panel">
+            <h2>Caja PC</h2>
+            <ul id="lista-pc">
+                </ul>
+        </section>
+
+        <section id="equipo-activo" class="panel">
+            <h2>Equipo Actual</h2>
+            <div id="slots-equipo">
+                </div>
+        </section>
+
+        <section id="panel-detalles" class="panel">
+            <h2>Inspección Táctica</h2>
+            <div id="info-pokemon">
+                <p>Selecciona un Pokémon para ver sus estadísticas.</p>
+            </div>
+            
+            <div class="control-nivel">
+                <label for="input-nivel">Nivel actual (1-20):</label>
+                <input type="number" id="input-nivel" min="1" max="20" value="10">
+            </div>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>

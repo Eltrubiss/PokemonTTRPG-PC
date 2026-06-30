@@ -7,24 +7,24 @@ console.log("======================================");
 console.log("Pokemon TTRPG Builder");
 console.log("======================================\n");
 
-await buildMoves();
-await buildPokemon();
+//await buildMoves();
+//await buildPokemon();
 await buildLearnsets(
     "level-up",
     "level"
 );
-await buildLearnsets(
+//await buildLearnsets(
     "machine",
     "tm"
-);
-await buildLearnsets(
-    "egg",
-    "egg"
-);
-await buildLearnsets(
-    "tutor",
-    "tutor"
-);
-await compileMoves();
+//);
+//await buildLearnsets(
+//    "egg",
+//    "egg"
+//);
+//await buildLearnsets(
+//    "tutor",
+//    "tutor"
+//);
+//await compileMoves();
 
 console.log("\nTodo listo.");

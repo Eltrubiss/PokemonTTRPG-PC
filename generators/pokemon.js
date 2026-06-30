@@ -1,4 +1,5 @@
 import fs from "fs/promises";
+import { buildSpeciesMap } from "../lib/pokemon/speciesMap.js";
 import { buildStats } from "../lib/pokemon/stats.js";
 import { buildTypes } from "../lib/pokemon/types.js";
 import { buildAbilities } from "../lib/pokemon/abilities.js";
@@ -6,11 +7,12 @@ import { createPokemon } from "../lib/pokemon/builder.js";
 import { getSpanishName } from "../lib/translator.js";
 import { buildEvolutions } from "../lib/pokemon/evolutions.js";
 import registry from "../lib/registry.js";
-
+import {   
+    getFormSlug,
+    getFormName,
+    isTemporaryForm
+} from "../lib/pokemon/forms.js";
 import {
-    getPokemonList,
-    getPokemon,
-    getSpecies,
     getEvolution
 } from "../lib/api.js";
 
@@ -19,83 +21,124 @@ export async function buildPokemon() {
 
     console.log("Descargando Pokémon...\n");
 
-    const lista = await getPokemonList();
+    const speciesMap = await buildSpeciesMap();
     const pokemon = [];
+    
+    for (const group of speciesMap.values()){
+        const baseRaw = group.base;
 
-    for (const entry of lista.results) {
-
-        console.log(entry.name);
-        try {
-
-            const poke = await getPokemon(entry.url);
-
-            const species = await getSpecies(poke.species.url);
-            const evolutionData = await getEvolution(
-                species.evolution_chain.url
+        if (!baseRaw) {
+            console.warn(
+                `La especie ${group.species.name} no tiene forma base.`
             );
-
-            const evoluciones = buildEvolutions(
-                evolutionData.chain,
-                poke.name
-            );
-
-            const nombre = getSpanishName(
-                species.names,
-                poke.name
-            );
-
+            continue;
+        }
+        const evolutionData = await getEvolution(
+            group.species.evolution_chain.url
+        );
+        const evoluciones = buildEvolutions(
+            evolutionData.chain,
+            group.species.name
+        );
+        const nombre = getSpanishName(
+            group.species.names,
+            baseRaw.name
+        );
+        const tipos = await buildTypes(
+            baseRaw.types
+        );
+        const {
+            normales,
+            oculta
+        } = await buildAbilities(
+            baseRaw.abilities
+        );
+        const stats = buildStats(
+            baseRaw.stats
+        )
+        const actual = createPokemon({
+            poke: baseRaw,
+            slug: group.species.name,
+            nombre,
+            tipos,
+            habilidades:normales,
+            habilidadOculta:oculta,
+            evoluciones,
+            stats,
+            species:group.species
+        })
+        actual.forma = getFormSlug(
+            group.species.name,
+            baseRaw.name
+        );
+        for (const formRaw of group.forms) {
             const tipos = await buildTypes(
-                poke.types
+                formRaw.types
             );
 
             const {
                 normales,
                 oculta
             } = await buildAbilities(
-                poke.abilities
+                formRaw.abilities
             );
 
             const stats = buildStats(
-                poke.stats
-            )
-
-            pokemon.push(
-                createPokemon({
-                    poke,
-                    nombre,
-                    tipos,
-                    habilidades:normales,
-                    habilidadOculta:oculta,
-                    evoluciones,
-                    stats,
-                    species
-                })
+                formRaw.stats
+            );
+            const pokemonlug = getFormSlug(
+                group.species.name,
+                formRaw.name
             );
 
-            const actual = pokemon[pokemon.length - 1];
+            actual.formas[pokemonlug] = {
 
-            if (!registry.bySpecies.has(species.name)) {
+                id: formRaw.id,
 
-                registry.bySpecies.set(
-                    species.name,
-                    []
-                );
+                slug: pokemonlug,
 
-            }
+                nombre: getFormName(pokemonlug),
 
-            registry.bySpecies
-                .get(species.name)
-                .push(actual);
+                tipo: tipos,
+
+                habilidades: {
+
+                    normales,
+
+                    oculta
+
+                },
+
+                stat_base: stats
+
+            };
+        }
+
+        pokemon.push(actual);
+
+        if (!registry.bySpecies.has(group.species.name)) {
+
+            registry.bySpecies.set(
+                group.species.name,
+                []
+            );
 
         }
 
-        catch (err) {
-
-            console.error(err.message);
-
-        }
+        registry.bySpecies
+            .get(group.species.name)
+            .push(actual);
 
     }
+
+    
+
+
+
+    console.log("\n================================");
+    console.log("Species agrupadas:", speciesMap.size);
+    console.log("================================");
+
 
     for (const poke of pokemon) {
 

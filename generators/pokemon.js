@@ -1,15 +1,16 @@
 import fs from "fs/promises";
+import { buildStats } from "../lib/pokemon/stats.js";
+import { buildTypes } from "../lib/pokemon/types.js";
+import { buildAbilities } from "../lib/pokemon/abilities.js";
+import { createPokemon } from "../lib/pokemon/builder.js";
 import { getSpanishName } from "../lib/translator.js";
-import { buscarEvoluciones } from "../lib/evolution.js";
-import { createConditions } from "../lib/conditions.js";
+import { buildEvolutions } from "../lib/pokemon/evolutions.js";
 import registry from "../lib/registry.js";
 
 import {
     getPokemonList,
     getPokemon,
     getSpecies,
-    getType,
-    getAbility,
     getEvolution
 } from "../lib/api.js";
 
@@ -19,13 +20,11 @@ export async function buildPokemon() {
     console.log("Descargando Pokémon...\n");
 
     const lista = await getPokemonList();
-
     const pokemon = [];
 
     for (const entry of lista.results) {
 
         console.log(entry.name);
-
         try {
 
             const poke = await getPokemon(entry.url);
@@ -35,167 +34,58 @@ export async function buildPokemon() {
                 species.evolution_chain.url
             );
 
-            const siguientesEvoluciones = buscarEvoluciones(
+            const evoluciones = buildEvolutions(
                 evolutionData.chain,
                 poke.name
             );
 
-        const evoluciones = [];
-
-        for (const siguiente of siguientesEvoluciones) {
-
-            const detalle = siguiente.evolution_details[0];
-
-            const evolucion = {
-
-                id: null,
-
-                slug: siguiente.species.name,
-
-                nombre: siguiente.species.name,
-
-                condiciones: createConditions()
-
-            };
-
-            if (detalle) {
-
-                if (detalle.min_level) {
-
-                    evolucion.condiciones.nivel = Math.max(
-                        1,
-                        Math.round(detalle.min_level / 5)
-                    );
-
-                }
-
-                else if (detalle.trigger?.name === "trade") {
-
-                    evolucion.condiciones.intercambio = true;
-
-                }
-
-                else if (detalle.trigger?.name === "use-item") {
-
-                    evolucion.condiciones.objeto =
-                        detalle.item?.name ?? null;
-
-                }
-
-            }
-
-            evoluciones.push(evolucion);
-
-        }
             const nombre = getSpanishName(
                 species.names,
                 poke.name
             );
 
-            // Tipos
-
-            const tipos = [];
-
-            for (const tipo of poke.types) {
-
-                const typeData = await getType(tipo.type.url);
-
-                const nombreTipo = getSpanishName(
-                    typeData.names,
-                    tipo.type.name
-                    );
-                
-                tipos.push(nombreTipo);
-
-            }
-
-            // Habilidades
-
-            const habilidades = [];
-
-            const habilidadOculta = [];
-
-            for (const habilidad of poke.abilities) {
-
-                const abilityData = await getAbility(habilidad.ability.url);
-
-                const nombreHabilidad = getSpanishName(
-                    abilityData.names,
-                    habilidad.ability.name
-                    );
-
-                if (habilidad.is_hidden)
-                    habilidadOculta.push(nombreHabilidad);
-                else
-                    habilidades.push(nombreHabilidad);
-
-            }
-
-            // Stats
-
-            const stats = {};
-
-            for (const stat of poke.stats) {
-
-                switch (stat.stat.name) {
-
-                    case "hp":
-                        stats.hp = stat.base_stat;
-                        break;
-
-                    case "attack":
-                        stats.atk = stat.base_stat;
-                        break;
-
-                    case "defense":
-                        stats.def = stat.base_stat;
-                        break;
-
-                    case "special-attack":
-                        stats.sp_atk = stat.base_stat;
-                        break;
-
-                    case "special-defense":
-                        stats.sp_def = stat.base_stat;
-                        break;
-
-                    case "speed":
-                        stats.speed = stat.base_stat;
-                        break;
-
-                }
-
-            }
-
-            pokemon.push({
-
-                id: poke.id,
-                slug: poke.name,
-                nombre,
-                tipo: tipos,
-                habilidades: {
-                    normales: habilidades,
-                    oculta: habilidadOculta
-                },
-                genero: {
-                    macho: species.gender_rate === -1
-                        ? null
-                        : ((8 - species.gender_rate) / 8) * 100,
-                    hembra: species.gender_rate === -1
-                        ? null
-                        : (species.gender_rate / 8) * 100
-
-                },
-                formas: {
-                },
-                evoluciones,
-                stat_base: stats
-            });
-
-            registry.bySpecies.set(
-                species.name,
-                pokemon[pokemon.length - 1]
+            const tipos = await buildTypes(
+                poke.types
             );
+
+            const {
+                normales,
+                oculta
+            } = await buildAbilities(
+                poke.abilities
+            );
+
+            const stats = buildStats(
+                poke.stats
+            )
+
+            pokemon.push(
+                createPokemon({
+                    poke,
+                    nombre,
+                    tipos,
+                    habilidades:normales,
+                    habilidadOculta:oculta,
+                    evoluciones,
+                    stats,
+                    species
+                })
+            );
+
+            const actual = pokemon[pokemon.length - 1];
+
+            if (!registry.bySpecies.has(species.name)) {
+
+                registry.bySpecies.set(
+                    species.name,
+                    []
+                );
+
+            }
+
+            registry.bySpecies
+                .get(species.name)
+                .push(actual);
 
         }
 
@@ -222,7 +112,6 @@ export async function buildPokemon() {
     }
 
     for (const poke of pokemon) {
-
         for (const evolucion of poke.evoluciones) {
 
             let destino = registry.bySlug.get(
@@ -230,28 +119,27 @@ export async function buildPokemon() {
             );
 
             if (!destino) {
-
-                destino = registry.bySpecies.get(
+                const formas = registry.bySpecies.get(
                     evolucion.slug
                 );
-
+                if (formas?.length > 0) {
+                    destino = formas[0];
+                }
             }
 
-            if (!destino) {
+            if (destino) {
+                evolucion.id = destino.id;
+                evolucion.nombre = destino.nombre;
+
+            } else {
 
                 console.warn(
                     `No se encontró la evolución "${evolucion.slug}" para ${poke.nombre}`
                 );
-
-                continue;
             }
-            evolucion.id = destino.id;
-
-            evolucion.nombre = destino.nombre;
-
         }
-
     }
+    
     pokemon.sort((a, b) => a.id - b.id);
 
     await fs.mkdir("./data", { recursive: true });

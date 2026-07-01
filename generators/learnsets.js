@@ -2,8 +2,8 @@ import fs from "fs/promises";
 import { getBestVersion } from "../lib/learnsets/version.js";
 import { buildSpeciesMap } from "../lib/pokemon/speciesMap.js";
 import { getFormSlug } from "../lib/pokemon/forms.js";
-import { buildInheritance } from "../lib/learnsets/inheritance.js";
-
+import { compareLearnsets } from "../lib/learnsets/compareLearnsets.js";
+import { extractMoves } from "../lib/learnsets/extractMoves.js";
 
 export async function buildLearnsets(method, outputName = method) {
     console.log("Generando learnsets...");
@@ -22,40 +22,11 @@ export async function buildLearnsets(method, outputName = method) {
 
         try{
       
-        const moves = [];
-        for (const move of base.moves) {
-            const version = getBestVersion(
-                move.version_group_details
-            );
-            if (!version) {
-                continue;
-            }
+        const filtrados = extractMoves(
+            base,
+            method
+        );
 
-            if (
-                version.move_learn_method.name !== method
-            ) {
-                continue;
-            }
-
-            moves.push({
-                slug: move.move.name,
-                nivel: Math.max(
-                    1,
-                    Math.round(
-                        version.level_learned_at / 5
-                    )
-                )
-            });
-        }
-        
-        moves.sort((a, b) => {
-            if (a.nivel !== b.nivel) {
-                return a.nivel - b.nivel;
-            }
-            return a.slug.localeCompare(b.slug);
-        });
-        const vistos = new Set();
-        const filtrados = [];
         const learnset = {
 
             slug: group.slug,
@@ -71,30 +42,41 @@ export async function buildLearnsets(method, outputName = method) {
 
         };
 
-        for (const move of moves) {
-            if (vistos.has(move.slug)) {
-                continue;
-            }
-            vistos.add(move.slug);
-            filtrados.push(move);
-        }
-
         for (const form of group.forms) {
             if (form === base)
                 continue;
 
-            const formMoves = [];
-
-            const diff = buildInheritance(
-                filtrados,
-                formMoves
+            const formMoves = extractMoves(
+                form,
+                method
             );
+
             const formSlug = getFormSlug(
                 group.slug,
                 form.name
             );
 
-            learnset.formas[formSlug] = diff;
+            let diff;
+
+            if (method === "level-up") {
+
+                diff = compareLearnsets(
+                    filtrados,
+                    formMoves
+                );
+
+            } else {
+
+                diff = {
+                    moves: formMoves
+                };
+            }
+
+            if (Object.keys(diff).length > 0) {
+                learnset.formas[formSlug] = diff;
+            } else {
+                learnset.formas[formSlug] = {};
+            }
         }
 
         learnsets.push(learnset);

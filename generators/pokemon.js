@@ -97,7 +97,9 @@ export async function buildPokemon() {
 
                 slug: pokemonlug,
 
-                nombre: getFormName(pokemonlug),
+                nombre: getFormName(
+                    group.species.name,
+                    pokemonlug),
 
                 tipo: tipos,
 

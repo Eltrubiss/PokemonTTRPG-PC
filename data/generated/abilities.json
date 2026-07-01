@@ -1,0 +1,2986 @@
+[
+  {
+    "id": 1,
+    "slug": "stench",
+    "nombre": "Hedor",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 2,
+    "slug": "drizzle",
+    "nombre": "Llovizna",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 3,
+    "slug": "speed-boost",
+    "nombre": "Impulso",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 4,
+    "slug": "battle-armor",
+    "nombre": "Armadura Batalla",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 5,
+    "slug": "sturdy",
+    "nombre": "Robustez",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 6,
+    "slug": "damp",
+    "nombre": "Humedad",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 7,
+    "slug": "limber",
+    "nombre": "Flexibilidad",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 8,
+    "slug": "sand-veil",
+    "nombre": "Velo Arena",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 9,
+    "slug": "static",
+    "nombre": "Electricidad Estática",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 10,
+    "slug": "volt-absorb",
+    "nombre": "Absorbe Electricidad",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 11,
+    "slug": "water-absorb",
+    "nombre": "Absorbe Agua",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 12,
+    "slug": "oblivious",
+    "nombre": "Despiste",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 13,
+    "slug": "cloud-nine",
+    "nombre": "Aclimatación",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 14,
+    "slug": "compound-eyes",
+    "nombre": "Ojo Compuesto",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 15,
+    "slug": "insomnia",
+    "nombre": "Insomnio",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 16,
+    "slug": "color-change",
+    "nombre": "Cambio Color",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 17,
+    "slug": "immunity",
+    "nombre": "Inmunidad",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 18,
+    "slug": "flash-fire",
+    "nombre": "Absorbe Fuego",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 19,
+    "slug": "shield-dust",
+    "nombre": "Polvo Escudo",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 20,
+    "slug": "own-tempo",
+    "nombre": "Ritmo Propio",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 21,
+    "slug": "suction-cups",
+    "nombre": "Ventosas",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 22,
+    "slug": "intimidate",
+    "nombre": "Intimidación",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 23,
+    "slug": "shadow-tag",
+    "nombre": "Sombra Trampa",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 24,
+    "slug": "rough-skin",
+    "nombre": "Piel Tosca",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 25,
+    "slug": "wonder-guard",
+    "nombre": "Superguarda",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 26,
+    "slug": "levitate",
+    "nombre": "Levitación",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 27,
+    "slug": "effect-spore",
+    "nombre": "Efecto Espora",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 28,
+    "slug": "synchronize",
+    "nombre": "Sincronía",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 29,
+    "slug": "clear-body",
+    "nombre": "Cuerpo Puro",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 30,
+    "slug": "natural-cure",
+    "nombre": "Cura Natural",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 31,
+    "slug": "lightning-rod",
+    "nombre": "Pararrayos",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 32,
+    "slug": "serene-grace",
+    "nombre": "Dicha",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 33,
+    "slug": "swift-swim",
+    "nombre": "Nado Rápido",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 34,
+    "slug": "chlorophyll",
+    "nombre": "Clorofila",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 35,
+    "slug": "illuminate",
+    "nombre": "Iluminación",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 36,
+    "slug": "trace",
+    "nombre": "Calco",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 37,
+    "slug": "huge-power",
+    "nombre": "Potencia",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 38,
+    "slug": "poison-point",
+    "nombre": "Punto Tóxico",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 39,
+    "slug": "inner-focus",
+    "nombre": "Fuerza Mental",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 40,
+    "slug": "magma-armor",
+    "nombre": "Escudo Magma",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 41,
+    "slug": "water-veil",
+    "nombre": "Velo Agua",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 42,
+    "slug": "magnet-pull",
+    "nombre": "Imán",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 43,
+    "slug": "soundproof",
+    "nombre": "Insonorizar",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 44,
+    "slug": "rain-dish",
+    "nombre": "Cura Lluvia",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 45,
+    "slug": "sand-stream",
+    "nombre": "Chorro Arena",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 46,
+    "slug": "pressure",
+    "nombre": "Presión",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 47,
+    "slug": "thick-fat",
+    "nombre": "Sebo",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 48,
+    "slug": "early-bird",
+    "nombre": "Madrugar",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 49,
+    "slug": "flame-body",
+    "nombre": "Cuerpo Llama",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 50,
+    "slug": "run-away",
+    "nombre": "Fuga",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 51,
+    "slug": "keen-eye",
+    "nombre": "Vista Lince",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 52,
+    "slug": "hyper-cutter",
+    "nombre": "Corte Fuerte",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 53,
+    "slug": "pickup",
+    "nombre": "Recogida",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 54,
+    "slug": "truant",
+    "nombre": "Ausente",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 55,
+    "slug": "hustle",
+    "nombre": "Entusiasmo",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 56,
+    "slug": "cute-charm",
+    "nombre": "Gran Encanto",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 57,
+    "slug": "plus",
+    "nombre": "Más",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 58,
+    "slug": "minus",
+    "nombre": "Menos",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 59,
+    "slug": "forecast",
+    "nombre": "Predicción",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 60,
+    "slug": "sticky-hold",
+    "nombre": "Viscosidad",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 61,
+    "slug": "shed-skin",
+    "nombre": "Mudar",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 62,
+    "slug": "guts",
+    "nombre": "Agallas",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 63,
+    "slug": "marvel-scale",
+    "nombre": "Escama Especial",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 64,
+    "slug": "liquid-ooze",
+    "nombre": "Lodo Líquido",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 65,
+    "slug": "overgrow",
+    "nombre": "Espesura",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 66,
+    "slug": "blaze",
+    "nombre": "Mar Llamas",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 67,
+    "slug": "torrent",
+    "nombre": "Torrente",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 68,
+    "slug": "swarm",
+    "nombre": "Enjambre",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 69,
+    "slug": "rock-head",
+    "nombre": "Cabeza Roca",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 70,
+    "slug": "drought",
+    "nombre": "Sequía",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 71,
+    "slug": "arena-trap",
+    "nombre": "Trampa Arena",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 72,
+    "slug": "vital-spirit",
+    "nombre": "Espíritu Vital",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 73,
+    "slug": "white-smoke",
+    "nombre": "Humo Blanco",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 74,
+    "slug": "pure-power",
+    "nombre": "Energía Pura",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 75,
+    "slug": "shell-armor",
+    "nombre": "Caparazón",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 76,
+    "slug": "air-lock",
+    "nombre": "Bucle Aire",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 77,
+    "slug": "tangled-feet",
+    "nombre": "Tumbos",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 78,
+    "slug": "motor-drive",
+    "nombre": "Electromotor",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 79,
+    "slug": "rivalry",
+    "nombre": "Rivalidad",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 80,
+    "slug": "steadfast",
+    "nombre": "Impasible",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 81,
+    "slug": "snow-cloak",
+    "nombre": "Manto Níveo",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 82,
+    "slug": "gluttony",
+    "nombre": "Gula",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 83,
+    "slug": "anger-point",
+    "nombre": "Irascible",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 84,
+    "slug": "unburden",
+    "nombre": "Liviano",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 85,
+    "slug": "heatproof",
+    "nombre": "Ignífugo",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 86,
+    "slug": "simple",
+    "nombre": "Simple",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 87,
+    "slug": "dry-skin",
+    "nombre": "Piel Seca",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 88,
+    "slug": "download",
+    "nombre": "Descarga",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 89,
+    "slug": "iron-fist",
+    "nombre": "Puño Férreo",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 90,
+    "slug": "poison-heal",
+    "nombre": "Antídoto",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 91,
+    "slug": "adaptability",
+    "nombre": "Adaptable",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 92,
+    "slug": "skill-link",
+    "nombre": "Encadenado",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 93,
+    "slug": "hydration",
+    "nombre": "Hidratación",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 94,
+    "slug": "solar-power",
+    "nombre": "Poder Solar",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 95,
+    "slug": "quick-feet",
+    "nombre": "Pies Rápidos",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 96,
+    "slug": "normalize",
+    "nombre": "Normalidad",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 97,
+    "slug": "sniper",
+    "nombre": "Francotirador",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 98,
+    "slug": "magic-guard",
+    "nombre": "Muro Mágico",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 99,
+    "slug": "no-guard",
+    "nombre": "Indefenso",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 100,
+    "slug": "stall",
+    "nombre": "Rezagado",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 101,
+    "slug": "technician",
+    "nombre": "Experto",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 102,
+    "slug": "leaf-guard",
+    "nombre": "Defensa Hoja",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 103,
+    "slug": "klutz",
+    "nombre": "Zoquete",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 104,
+    "slug": "mold-breaker",
+    "nombre": "Rompemoldes",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 105,
+    "slug": "super-luck",
+    "nombre": "Afortunado",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 106,
+    "slug": "aftermath",
+    "nombre": "Detonación",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 107,
+    "slug": "anticipation",
+    "nombre": "Anticipación",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 108,
+    "slug": "forewarn",
+    "nombre": "Alerta",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 109,
+    "slug": "unaware",
+    "nombre": "Ignorante",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 110,
+    "slug": "tinted-lens",
+    "nombre": "Cromolente",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 111,
+    "slug": "filter",
+    "nombre": "Filtro",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 112,
+    "slug": "slow-start",
+    "nombre": "Inicio Lento",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 113,
+    "slug": "scrappy",
+    "nombre": "Intrépido",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 114,
+    "slug": "storm-drain",
+    "nombre": "Colector",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 115,
+    "slug": "ice-body",
+    "nombre": "Gélido",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 116,
+    "slug": "solid-rock",
+    "nombre": "Roca Sólida",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 117,
+    "slug": "snow-warning",
+    "nombre": "Nevada",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 118,
+    "slug": "honey-gather",
+    "nombre": "Recogemiel",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 119,
+    "slug": "frisk",
+    "nombre": "Cacheo",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 120,
+    "slug": "reckless",
+    "nombre": "Audaz",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 121,
+    "slug": "multitype",
+    "nombre": "Multitipo",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 122,
+    "slug": "flower-gift",
+    "nombre": "Don Floral",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 123,
+    "slug": "bad-dreams",
+    "nombre": "Mal Sueño",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 124,
+    "slug": "pickpocket",
+    "nombre": "Hurto",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 125,
+    "slug": "sheer-force",
+    "nombre": "Potencia Bruta",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 126,
+    "slug": "contrary",
+    "nombre": "Respondón",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 127,
+    "slug": "unnerve",
+    "nombre": "Nerviosismo",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 128,
+    "slug": "defiant",
+    "nombre": "Competitivo",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 129,
+    "slug": "defeatist",
+    "nombre": "Flaqueza",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 130,
+    "slug": "cursed-body",
+    "nombre": "Cuerpo Maldito",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 131,
+    "slug": "healer",
+    "nombre": "Alma Cura",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 132,
+    "slug": "friend-guard",
+    "nombre": "Compiescolta",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 133,
+    "slug": "weak-armor",
+    "nombre": "Armadura Frágil",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 134,
+    "slug": "heavy-metal",
+    "nombre": "Metal Pesado",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 135,
+    "slug": "light-metal",
+    "nombre": "Metal Liviano",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 136,
+    "slug": "multiscale",
+    "nombre": "Multiescamas",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 137,
+    "slug": "toxic-boost",
+    "nombre": "Ímpetu Tóxico",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 138,
+    "slug": "flare-boost",
+    "nombre": "Ímpetu Ardiente",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 139,
+    "slug": "harvest",
+    "nombre": "Cosecha",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 140,
+    "slug": "telepathy",
+    "nombre": "Telepatía",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 141,
+    "slug": "moody",
+    "nombre": "Veleta",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 142,
+    "slug": "overcoat",
+    "nombre": "Funda",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 143,
+    "slug": "poison-touch",
+    "nombre": "Toque Tóxico",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 144,
+    "slug": "regenerator",
+    "nombre": "Regeneración",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 145,
+    "slug": "big-pecks",
+    "nombre": "Sacapecho",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 146,
+    "slug": "sand-rush",
+    "nombre": "Ímpetu Arena",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 147,
+    "slug": "wonder-skin",
+    "nombre": "Piel Milagro",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 148,
+    "slug": "analytic",
+    "nombre": "Cálculo Final",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 149,
+    "slug": "illusion",
+    "nombre": "Ilusión",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 150,
+    "slug": "imposter",
+    "nombre": "Impostor",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 151,
+    "slug": "infiltrator",
+    "nombre": "Allanamiento",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 152,
+    "slug": "mummy",
+    "nombre": "Momia",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 153,
+    "slug": "moxie",
+    "nombre": "Autoestima",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 154,
+    "slug": "justified",
+    "nombre": "Justiciero",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 155,
+    "slug": "rattled",
+    "nombre": "Cobardía",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 156,
+    "slug": "magic-bounce",
+    "nombre": "Espejo Mágico",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 157,
+    "slug": "sap-sipper",
+    "nombre": "Herbívoro",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 158,
+    "slug": "prankster",
+    "nombre": "Bromista",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 159,
+    "slug": "sand-force",
+    "nombre": "Poder Arena",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 160,
+    "slug": "iron-barbs",
+    "nombre": "Punta Acero",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 161,
+    "slug": "zen-mode",
+    "nombre": "Modo Daruma",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 162,
+    "slug": "victory-star",
+    "nombre": "Tinovictoria",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 163,
+    "slug": "turboblaze",
+    "nombre": "Turbollama",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 164,
+    "slug": "teravolt",
+    "nombre": "Terravoltaje",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 165,
+    "slug": "aroma-veil",
+    "nombre": "Velo Aroma",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 166,
+    "slug": "flower-veil",
+    "nombre": "Velo Flor",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 167,
+    "slug": "cheek-pouch",
+    "nombre": "Carrillo",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 168,
+    "slug": "protean",
+    "nombre": "Mutatipo",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 169,
+    "slug": "fur-coat",
+    "nombre": "Pelaje Recio",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 170,
+    "slug": "magician",
+    "nombre": "Prestidigitador",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 171,
+    "slug": "bulletproof",
+    "nombre": "Antibalas",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 172,
+    "slug": "competitive",
+    "nombre": "Tenacidad",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 173,
+    "slug": "strong-jaw",
+    "nombre": "Mandíbula Fuerte",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 174,
+    "slug": "refrigerate",
+    "nombre": "Piel Helada",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 175,
+    "slug": "sweet-veil",
+    "nombre": "Velo Dulce",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 176,
+    "slug": "stance-change",
+    "nombre": "Cambio Táctico",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 177,
+    "slug": "gale-wings",
+    "nombre": "Alas Vendaval",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 178,
+    "slug": "mega-launcher",
+    "nombre": "Megadisparador",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 179,
+    "slug": "grass-pelt",
+    "nombre": "Manto Frondoso",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 180,
+    "slug": "symbiosis",
+    "nombre": "Simbiosis",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 181,
+    "slug": "tough-claws",
+    "nombre": "Garra Dura",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 182,
+    "slug": "pixilate",
+    "nombre": "Piel Feérica",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 183,
+    "slug": "gooey",
+    "nombre": "Baba",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 184,
+    "slug": "aerilate",
+    "nombre": "Piel Celeste",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 185,
+    "slug": "parental-bond",
+    "nombre": "Amor Filial",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 186,
+    "slug": "dark-aura",
+    "nombre": "Aura Oscura",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 187,
+    "slug": "fairy-aura",
+    "nombre": "Aura Feérica",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 188,
+    "slug": "aura-break",
+    "nombre": "Rompeaura",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 189,
+    "slug": "primordial-sea",
+    "nombre": "Mar del Albor",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 190,
+    "slug": "desolate-land",
+    "nombre": "Tierra del Ocaso",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 191,
+    "slug": "delta-stream",
+    "nombre": "Ráfaga Delta",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 192,
+    "slug": "stamina",
+    "nombre": "Firmeza",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 193,
+    "slug": "wimp-out",
+    "nombre": "Huida",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 194,
+    "slug": "emergency-exit",
+    "nombre": "Retirada",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 195,
+    "slug": "water-compaction",
+    "nombre": "Hidrorrefuerzo",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 196,
+    "slug": "merciless",
+    "nombre": "Ensañamiento",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 197,
+    "slug": "shields-down",
+    "nombre": "Escudo Limitado",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 198,
+    "slug": "stakeout",
+    "nombre": "Vigilante",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 199,
+    "slug": "water-bubble",
+    "nombre": "Pompa",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 200,
+    "slug": "steelworker",
+    "nombre": "Acero Templado",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 201,
+    "slug": "berserk",
+    "nombre": "Cólera",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 202,
+    "slug": "slush-rush",
+    "nombre": "Quitanieves",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 203,
+    "slug": "long-reach",
+    "nombre": "Remoto",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 204,
+    "slug": "liquid-voice",
+    "nombre": "Voz Fluida",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 205,
+    "slug": "triage",
+    "nombre": "Primer Auxilio",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 206,
+    "slug": "galvanize",
+    "nombre": "Piel Eléctrica",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 207,
+    "slug": "surge-surfer",
+    "nombre": "Cola Surf",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 208,
+    "slug": "schooling",
+    "nombre": "Banco",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 209,
+    "slug": "disguise",
+    "nombre": "Disfraz",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 210,
+    "slug": "battle-bond",
+    "nombre": "Fuerte Afecto",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 211,
+    "slug": "power-construct",
+    "nombre": "Agrupamiento",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 212,
+    "slug": "corrosion",
+    "nombre": "Corrosión",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 213,
+    "slug": "comatose",
+    "nombre": "Letargo Perenne",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 214,
+    "slug": "queenly-majesty",
+    "nombre": "Regia Presencia",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 215,
+    "slug": "innards-out",
+    "nombre": "Revés",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 216,
+    "slug": "dancer",
+    "nombre": "Pareja de Baile",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 217,
+    "slug": "battery",
+    "nombre": "Batería",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 218,
+    "slug": "fluffy",
+    "nombre": "Peluche",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 219,
+    "slug": "dazzling",
+    "nombre": "Cuerpo Vívido",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 220,
+    "slug": "soul-heart",
+    "nombre": "Coránima",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 221,
+    "slug": "tangling-hair",
+    "nombre": "Rizos Rebeldes",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 222,
+    "slug": "receiver",
+    "nombre": "Receptor",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 223,
+    "slug": "power-of-alchemy",
+    "nombre": "Reacción Química",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 224,
+    "slug": "beast-boost",
+    "nombre": "Ultraimpulso",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 225,
+    "slug": "rks-system",
+    "nombre": "Sistema Alfa",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 226,
+    "slug": "electric-surge",
+    "nombre": "Electrogénesis",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 227,
+    "slug": "psychic-surge",
+    "nombre": "Psicogénesis",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 228,
+    "slug": "misty-surge",
+    "nombre": "Nebulogénesis",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 229,
+    "slug": "grassy-surge",
+    "nombre": "Herbogénesis",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 230,
+    "slug": "full-metal-body",
+    "nombre": "Guardia Metálica",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 231,
+    "slug": "shadow-shield",
+    "nombre": "Guardia Espectro",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 232,
+    "slug": "prism-armor",
+    "nombre": "Armadura Prisma",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 233,
+    "slug": "neuroforce",
+    "nombre": "Fuerza Cerebral",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 234,
+    "slug": "intrepid-sword",
+    "nombre": "Espada Indómita",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 235,
+    "slug": "dauntless-shield",
+    "nombre": "Escudo Recio",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 236,
+    "slug": "libero",
+    "nombre": "Líbero",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 237,
+    "slug": "ball-fetch",
+    "nombre": "Recogebolas",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 238,
+    "slug": "cotton-down",
+    "nombre": "Pelusa",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 239,
+    "slug": "propeller-tail",
+    "nombre": "Hélice Caudal",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 240,
+    "slug": "mirror-armor",
+    "nombre": "Coraza Reflejo",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 241,
+    "slug": "gulp-missile",
+    "nombre": "Tragamisil",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 242,
+    "slug": "stalwart",
+    "nombre": "Acérrimo",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 243,
+    "slug": "steam-engine",
+    "nombre": "Combustible",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 244,
+    "slug": "punk-rock",
+    "nombre": "Punk Rock",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 245,
+    "slug": "sand-spit",
+    "nombre": "Expulsarena",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 246,
+    "slug": "ice-scales",
+    "nombre": "Escama de Hielo",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 247,
+    "slug": "ripen",
+    "nombre": "Maduración",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 248,
+    "slug": "ice-face",
+    "nombre": "Cara de Hielo",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 249,
+    "slug": "power-spot",
+    "nombre": "Fuente Energía",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 250,
+    "slug": "mimicry",
+    "nombre": "Mimetismo",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 251,
+    "slug": "screen-cleaner",
+    "nombre": "Antibarrera",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 252,
+    "slug": "steely-spirit",
+    "nombre": "Alma Acerada",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 253,
+    "slug": "perish-body",
+    "nombre": "Cuerpo Mortal",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 254,
+    "slug": "wandering-spirit",
+    "nombre": "Alma Errante",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 255,
+    "slug": "gorilla-tactics",
+    "nombre": "Monotema",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 256,
+    "slug": "neutralizing-gas",
+    "nombre": "Gas Reactivo",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 257,
+    "slug": "pastel-veil",
+    "nombre": "Velo Pastel",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 258,
+    "slug": "hunger-switch",
+    "nombre": "Mutapetito",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 259,
+    "slug": "quick-draw",
+    "nombre": "Mano Rápida",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 260,
+    "slug": "unseen-fist",
+    "nombre": "Puño Invisible",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 261,
+    "slug": "curious-medicine",
+    "nombre": "Medicina Extraña",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 262,
+    "slug": "transistor",
+    "nombre": "Transistor",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 263,
+    "slug": "dragons-maw",
+    "nombre": "Mandíbula Dragón",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 264,
+    "slug": "chilling-neigh",
+    "nombre": "Relincho Blanco",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 265,
+    "slug": "grim-neigh",
+    "nombre": "Relincho Negro",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 266,
+    "slug": "as-one-glastrier",
+    "nombre": "Unidad Ecuestre",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 267,
+    "slug": "as-one-spectrier",
+    "nombre": "Unidad Ecuestre",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 268,
+    "slug": "lingering-aroma",
+    "nombre": "Olor Persistente",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 269,
+    "slug": "seed-sower",
+    "nombre": "Disemillar",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 270,
+    "slug": "thermal-exchange",
+    "nombre": "Termoconversión",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 271,
+    "slug": "anger-shell",
+    "nombre": "Coraza Ira",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 272,
+    "slug": "purifying-salt",
+    "nombre": "Sal Purificadora",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 273,
+    "slug": "well-baked-body",
+    "nombre": "Cuerpo Horneado",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 274,
+    "slug": "wind-rider",
+    "nombre": "Surcavientos",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 275,
+    "slug": "guard-dog",
+    "nombre": "Perro Guardián",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 276,
+    "slug": "rocky-payload",
+    "nombre": "Transportarrocas",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 277,
+    "slug": "wind-power",
+    "nombre": "Energía Eólica",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 278,
+    "slug": "zero-to-hero",
+    "nombre": "Cambio Heroico",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 279,
+    "slug": "commander",
+    "nombre": "Comandar",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 280,
+    "slug": "electromorphosis",
+    "nombre": "Dinamo",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 281,
+    "slug": "protosynthesis",
+    "nombre": "Paleosíntesis",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 282,
+    "slug": "quark-drive",
+    "nombre": "Carga Cuark",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 283,
+    "slug": "good-as-gold",
+    "nombre": "Cuerpo Áureo",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 284,
+    "slug": "vessel-of-ruin",
+    "nombre": "Caldero Debacle",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 285,
+    "slug": "sword-of-ruin",
+    "nombre": "Espada Debacle",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 286,
+    "slug": "tablets-of-ruin",
+    "nombre": "Tablilla Debacle",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 287,
+    "slug": "beads-of-ruin",
+    "nombre": "Abalorio Debacle",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 288,
+    "slug": "orichalcum-pulse",
+    "nombre": "Latido Oricalco",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 289,
+    "slug": "hadron-engine",
+    "nombre": "Motor Hadrónico",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 290,
+    "slug": "opportunist",
+    "nombre": "Oportunista",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 291,
+    "slug": "cud-chew",
+    "nombre": "Rumia",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 292,
+    "slug": "sharpness",
+    "nombre": "Cortante",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 293,
+    "slug": "supreme-overlord",
+    "nombre": "General Supremo",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 294,
+    "slug": "costar",
+    "nombre": "Unísono",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 295,
+    "slug": "toxic-debris",
+    "nombre": "Capa Tóxica",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 296,
+    "slug": "armor-tail",
+    "nombre": "Cola Armadura",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 297,
+    "slug": "earth-eater",
+    "nombre": "Geofagia",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 298,
+    "slug": "mycelium-might",
+    "nombre": "Poder Fúngico",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 299,
+    "slug": "minds-eye",
+    "nombre": "Ojo Mental",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 300,
+    "slug": "supersweet-syrup",
+    "nombre": "Néctar Dulce",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 301,
+    "slug": "hospitality",
+    "nombre": "Hospitalidad",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 302,
+    "slug": "toxic-chain",
+    "nombre": "Cadena Tóxica",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 303,
+    "slug": "embody-aspect",
+    "nombre": "Evocarrecuerdos",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 304,
+    "slug": "tera-shift",
+    "nombre": "Teracambio",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 305,
+    "slug": "tera-shell",
+    "nombre": "Teracaparazón",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 306,
+    "slug": "teraform-zero",
+    "nombre": "Teraformación 0",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 307,
+    "slug": "poison-puppeteer",
+    "nombre": "Títere Tóxico",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 308,
+    "slug": "piercing-drill",
+    "nombre": "Turbotaladro",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 309,
+    "slug": "dragonize",
+    "nombre": "Piel Dragontina",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 310,
+    "slug": "mega-sol",
+    "nombre": "Megasolar",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 311,
+    "slug": "spicy-spray",
+    "nombre": "Salpicante",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 312,
+    "slug": "eelevate",
+    "nombre": "eelevate",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 313,
+    "slug": "fire-mane",
+    "nombre": "fire-mane",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 10001,
+    "slug": "mountaineer",
+    "nombre": "mountaineer",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 10002,
+    "slug": "wave-rider",
+    "nombre": "wave-rider",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 10003,
+    "slug": "skater",
+    "nombre": "skater",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 10004,
+    "slug": "thrust",
+    "nombre": "thrust",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 10005,
+    "slug": "perception",
+    "nombre": "perception",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 10006,
+    "slug": "parry",
+    "nombre": "parry",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 10007,
+    "slug": "instinct",
+    "nombre": "instinct",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 10008,
+    "slug": "dodge",
+    "nombre": "dodge",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 10009,
+    "slug": "jagged-edge",
+    "nombre": "jagged-edge",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 10010,
+    "slug": "frostbite",
+    "nombre": "frostbite",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 10011,
+    "slug": "tenacity",
+    "nombre": "tenacity",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 10012,
+    "slug": "pride",
+    "nombre": "pride",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 10013,
+    "slug": "deep-sleep",
+    "nombre": "deep-sleep",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 10014,
+    "slug": "power-nap",
+    "nombre": "power-nap",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 10015,
+    "slug": "spirit",
+    "nombre": "spirit",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 10016,
+    "slug": "warm-blanket",
+    "nombre": "warm-blanket",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 10017,
+    "slug": "gulp",
+    "nombre": "gulp",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 10018,
+    "slug": "herbivore",
+    "nombre": "herbivore",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 10019,
+    "slug": "sandpit",
+    "nombre": "sandpit",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 10020,
+    "slug": "hot-blooded",
+    "nombre": "hot-blooded",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 10021,
+    "slug": "medic",
+    "nombre": "medic",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 10022,
+    "slug": "life-force",
+    "nombre": "life-force",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 10023,
+    "slug": "lunchbox",
+    "nombre": "lunchbox",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 10024,
+    "slug": "nurse",
+    "nombre": "nurse",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 10025,
+    "slug": "melee",
+    "nombre": "melee",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 10026,
+    "slug": "sponge",
+    "nombre": "sponge",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 10027,
+    "slug": "bodyguard",
+    "nombre": "bodyguard",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 10028,
+    "slug": "hero",
+    "nombre": "hero",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 10029,
+    "slug": "last-bastion",
+    "nombre": "last-bastion",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 10030,
+    "slug": "stealth",
+    "nombre": "stealth",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 10031,
+    "slug": "vanguard",
+    "nombre": "vanguard",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 10032,
+    "slug": "nomad",
+    "nombre": "nomad",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 10033,
+    "slug": "sequence",
+    "nombre": "sequence",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 10034,
+    "slug": "grass-cloak",
+    "nombre": "grass-cloak",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 10035,
+    "slug": "celebrate",
+    "nombre": "celebrate",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 10036,
+    "slug": "lullaby",
+    "nombre": "lullaby",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 10037,
+    "slug": "calming",
+    "nombre": "calming",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 10038,
+    "slug": "daze",
+    "nombre": "daze",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 10039,
+    "slug": "frighten",
+    "nombre": "frighten",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 10040,
+    "slug": "interference",
+    "nombre": "interference",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 10041,
+    "slug": "mood-maker",
+    "nombre": "mood-maker",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 10042,
+    "slug": "confidence",
+    "nombre": "confidence",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 10043,
+    "slug": "fortune",
+    "nombre": "fortune",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 10044,
+    "slug": "bonanza",
+    "nombre": "bonanza",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 10045,
+    "slug": "explode",
+    "nombre": "explode",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 10046,
+    "slug": "omnipotent",
+    "nombre": "omnipotent",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 10047,
+    "slug": "share",
+    "nombre": "share",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 10048,
+    "slug": "black-hole",
+    "nombre": "black-hole",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 10049,
+    "slug": "shadow-dash",
+    "nombre": "shadow-dash",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 10050,
+    "slug": "sprint",
+    "nombre": "sprint",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 10051,
+    "slug": "disgust",
+    "nombre": "disgust",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 10052,
+    "slug": "high-rise",
+    "nombre": "high-rise",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 10053,
+    "slug": "climber",
+    "nombre": "climber",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 10054,
+    "slug": "flame-boost",
+    "nombre": "flame-boost",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 10055,
+    "slug": "aqua-boost",
+    "nombre": "aqua-boost",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 10056,
+    "slug": "run-up",
+    "nombre": "run-up",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 10057,
+    "slug": "conqueror",
+    "nombre": "conqueror",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 10058,
+    "slug": "shackle",
+    "nombre": "shackle",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 10059,
+    "slug": "decoy",
+    "nombre": "decoy",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  },
+  {
+    "id": 10060,
+    "slug": "shield",
+    "nombre": "shield",
+    "descripcion": "",
+    "efecto": "",
+    "tags": []
+  }
+]

@@ -10,8 +10,8 @@ console.log("Pokemon TTRPG Builder");
 console.log("======================================\n");
 
 //await buildMoves();
-//await buildPokemon();
-await buildAbilities();
+await buildPokemon();
+//await buildAbilities();
 //await buildLearnsets(
 //    "level-up",
 //    "level"
@@ -29,6 +29,6 @@ await buildAbilities();
 //    "tutor"
 //);
 //await compileMoves();
-await compileAbilities();
+//await compileAbilities();
 
 console.log("\n==== Todo listo. ====");

@@ -57,7 +57,11 @@ export async function buildPokemon() {
             baseRaw.stats
         )
         const actual = createPokemon({
-            poke: baseRaw,
+            poke: getSpanishName(
+                group.species.names,
+                baseRaw.name
+            ),
+            id: baseRaw.id,
             slug: group.species.name,
             nombre,
             tipos,
@@ -132,10 +136,6 @@ export async function buildPokemon() {
             .push(actual);
 
     }
-
-    
-
-
 
     console.log("\n================================");
     console.log("Species agrupadas:", speciesMap.size);

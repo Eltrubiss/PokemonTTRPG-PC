@@ -1,0 +1,17 @@
+{
+  "uid": "XP5AWMVN",
+  "speciesSlug": "pikachu",
+  "form": "normal",
+  "apodo": "",
+  "sexo": "M",
+  "naturaleza": "modest",
+  "rasgo": "avoids-conflict",
+  "nivel": 5,
+  "abilitySlug": "static",
+  "moveSlug": [
+    "electro-ball",
+    "feint",
+    "spark",
+    "agility"
+  ]
+}

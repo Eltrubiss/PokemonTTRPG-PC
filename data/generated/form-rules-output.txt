@@ -1,0 +1,1736 @@
+﻿    venusaur: {
+            "type": "temporary",
+            "forms": [
+                "normal",
+                "mega",
+                "gmax"
+            ]
+        },
+    charizard: {
+            "type": "temporary",
+            "forms": [
+                "normal",
+                "mega-x",
+                "mega-y"
+            ]
+        },
+    blastoise: {
+            "type": "temporary",
+            "forms": [
+                "normal",
+                "mega",
+                "gmax"
+            ]
+        },
+    butterfree: {
+            "type": "temporary",
+            "forms": [
+                "normal",
+                "gmax"
+            ]
+        },
+    beedrill: {
+            "type": "temporary",
+            "forms": [
+                "normal",
+                "mega"
+            ]
+        },
+    pidgeot: {
+            "type": "temporary",
+            "forms": [
+                "normal",
+                "mega"
+            ]
+        },
+    rattata: {
+            "type": "choice",
+            "forms": [
+                "normal",
+                "alola"
+            ]
+        },
+    raticate: {
+            "type": "temporary",
+            "forms": [
+                "normal",
+                "alola",
+                "totem-alola"
+            ]
+        },
+    pikachu: {
+            "type": "temporary",
+            "forms": [
+                "normal",
+                "rock-star",
+                "belle",
+                "pop-star",
+                "phd",
+                "libre",
+                "cosplay",
+                "hoenn-cap",
+                "sinnoh-cap",
+                "unova-cap",
+                "kalos-cap",
+                "alola-cap",
+                "partner-cap",
+                "starter",
+                "world-cap",
+                "gmax"
+            ]
+        },
+    raichu: {
+            "type": "temporary",
+            "forms": [
+                "normal",
+                "alola",
+                "mega-x",
+                "mega-y"
+            ]
+        },
+    sandshrew: {
+            "type": "choice",
+            "forms": [
+                "normal",
+                "alola"
+            ]
+        },
+    sandslash: {
+            "type": "choice",
+            "forms": [
+                "normal",
+                "alola"
+            ]
+        },
+    clefable: {
+            "type": "temporary",
+            "forms": [
+                "normal",
+                "mega"
+            ]
+        },
+    vulpix: {
+            "type": "choice",
+            "forms": [
+                "normal",
+                "alola"
+            ]
+        },
+    ninetales: {
+            "type": "choice",
+            "forms": [
+                "normal",
+                "alola"
+            ]
+        },
+    diglett: {
+            "type": "choice",
+            "forms": [
+                "normal",
+                "alola"
+            ]
+        },
+    dugtrio: {
+            "type": "choice",
+            "forms": [
+                "normal",
+                "alola"
+            ]
+        },
+    meowth: {
+            "type": "temporary",
+            "forms": [
+                "normal",
+                "alola",
+                "galar",
+                "gmax"
+            ]
+        },
+    persian: {
+            "type": "choice",
+            "forms": [
+                "normal",
+                "alola"
+            ]
+        },
+    growlithe: {
+            "type": "choice",
+            "forms": [
+                "normal",
+                "hisui"
+            ]
+        },
+    arcanine: {
+            "type": "choice",
+            "forms": [
+                "normal",
+                "hisui"
+            ]
+        },
+    alakazam: {
+            "type": "temporary",
+            "forms": [
+                "normal",
+                "mega"
+            ]
+        },
+    machamp: {
+            "type": "temporary",
+            "forms": [
+                "normal",
+                "gmax"
+            ]
+        },
+    victreebel: {
+            "type": "temporary",
+            "forms": [
+                "normal",
+                "mega"
+            ]
+        },
+    geodude: {
+            "type": "choice",
+            "forms": [
+                "normal",
+                "alola"
+            ]
+        },
+    graveler: {
+            "type": "choice",
+            "forms": [
+                "normal",
+                "alola"
+            ]
+        },
+    golem: {
+            "type": "choice",
+            "forms": [
+                "normal",
+                "alola"
+            ]
+        },
+    ponyta: {
+            "type": "choice",
+            "forms": [
+                "normal",
+                "galar"
+            ]
+        },
+    rapidash: {
+            "type": "choice",
+            "forms": [
+                "normal",
+                "galar"
+            ]
+        },
+    slowpoke: {
+            "type": "choice",
+            "forms": [
+                "normal",
+                "galar"
+            ]
+        },
+    slowbro: {
+            "type": "temporary",
+            "forms": [
+                "normal",
+                "mega",
+                "galar"
+            ]
+        },
+    farfetchd: {
+            "type": "choice",
+            "forms": [
+                "normal",
+                "galar"
+            ]
+        },
+    grimer: {
+            "type": "choice",
+            "forms": [
+                "normal",
+                "alola"
+            ]
+        },
+    muk: {
+            "type": "choice",
+            "forms": [
+                "normal",
+                "alola"
+            ]
+        },
+    gengar: {
+            "type": "temporary",
+            "forms": [
+                "normal",
+                "mega",
+                "gmax"
+            ]
+        },
+    kingler: {
+            "type": "temporary",
+            "forms": [
+                "normal",
+                "gmax"
+            ]
+        },
+    voltorb: {
+            "type": "choice",
+            "forms": [
+                "normal",
+                "hisui"
+            ]
+        },
+    electrode: {
+            "type": "choice",
+            "forms": [
+                "normal",
+                "hisui"
+            ]
+        },
+    exeggutor: {
+            "type": "choice",
+            "forms": [
+                "normal",
+                "alola"
+            ]
+        },
+    marowak: {
+            "type": "temporary",
+            "forms": [
+                "normal",
+                "alola",
+                "totem"
+            ]
+        },
+    weezing: {
+            "type": "choice",
+            "forms": [
+                "normal",
+                "galar"
+            ]
+        },
+    kangaskhan: {
+            "type": "temporary",
+            "forms": [
+                "normal",
+                "mega"
+            ]
+        },
+    starmie: {
+            "type": "temporary",
+            "forms": [
+                "normal",
+                "mega"
+            ]
+        },
+    mr-mime: {
+            "type": "choice",
+            "forms": [
+                "normal",
+                "galar"
+            ]
+        },
+    pinsir: {
+            "type": "temporary",
+            "forms": [
+                "normal",
+                "mega"
+            ]
+        },
+    tauros: {
+            "type": "choice",
+            "forms": [
+                "normal",
+                "paldea-combat-breed",
+                "paldea-blaze-breed",
+                "paldea-aqua-breed"
+            ]
+        },
+    gyarados: {
+            "type": "temporary",
+            "forms": [
+                "normal",
+                "mega"
+            ]
+        },
+    lapras: {
+            "type": "temporary",
+            "forms": [
+                "normal",
+                "gmax"
+            ]
+        },
+    eevee: {
+            "type": "temporary",
+            "forms": [
+                "normal",
+                "starter",
+                "gmax"
+            ]
+        },
+    aerodactyl: {
+            "type": "temporary",
+            "forms": [
+                "normal",
+                "mega"
+            ]
+        },
+    snorlax: {
+            "type": "temporary",
+            "forms": [
+                "normal",
+                "gmax"
+            ]
+        },
+    articuno: {
+            "type": "choice",
+            "forms": [
+                "normal",
+                "galar"
+            ]
+        },
+    zapdos: {
+            "type": "choice",
+            "forms": [
+                "normal",
+                "galar"
+            ]
+        },
+    moltres: {
+            "type": "choice",
+            "forms": [
+                "normal",
+                "galar"
+            ]
+        },
+    dragonite: {
+            "type": "temporary",
+            "forms": [
+                "normal",
+                "mega"
+            ]
+        },
+    mewtwo: {
+            "type": "temporary",
+            "forms": [
+                "normal",
+                "mega-x",
+                "mega-y"
+            ]
+        },
+    meganium: {
+            "type": "temporary",
+            "forms": [
+                "normal",
+                "mega"
+            ]
+        },
+    typhlosion: {
+            "type": "choice",
+            "forms": [
+                "normal",
+                "hisui"
+            ]
+        },
+    feraligatr: {
+            "type": "temporary",
+            "forms": [
+                "normal",
+                "mega"
+            ]
+        },
+    ampharos: {
+            "type": "temporary",
+            "forms": [
+                "normal",
+                "mega"
+            ]
+        },
+    wooper: {
+            "type": "choice",
+            "forms": [
+                "normal",
+                "paldea"
+            ]
+        },
+    slowking: {
+            "type": "choice",
+            "forms": [
+                "normal",
+                "galar"
+            ]
+        },
+    steelix: {
+            "type": "temporary",
+            "forms": [
+                "normal",
+                "mega"
+            ]
+        },
+    qwilfish: {
+            "type": "choice",
+            "forms": [
+                "normal",
+                "hisui"
+            ]
+        },
+    scizor: {
+            "type": "temporary",
+            "forms": [
+                "normal",
+                "mega"
+            ]
+        },
+    heracross: {
+            "type": "temporary",
+            "forms": [
+                "normal",
+                "mega"
+            ]
+        },
+    sneasel: {
+            "type": "choice",
+            "forms": [
+                "normal",
+                "hisui"
+            ]
+        },
+    corsola: {
+            "type": "choice",
+            "forms": [
+                "normal",
+                "galar"
+            ]
+        },
+    skarmory: {
+            "type": "temporary",
+            "forms": [
+                "normal",
+                "mega"
+            ]
+        },
+    houndoom: {
+            "type": "temporary",
+            "forms": [
+                "normal",
+                "mega"
+            ]
+        },
+    tyranitar: {
+            "type": "temporary",
+            "forms": [
+                "normal",
+                "mega"
+            ]
+        },
+    sceptile: {
+            "type": "temporary",
+            "forms": [
+                "normal",
+                "mega"
+            ]
+        },
+    blaziken: {
+            "type": "temporary",
+            "forms": [
+                "normal",
+                "mega"
+            ]
+        },
+    swampert: {
+            "type": "temporary",
+            "forms": [
+                "normal",
+                "mega"
+            ]
+        },
+    zigzagoon: {
+            "type": "choice",
+            "forms": [
+                "normal",
+                "galar"
+            ]
+        },
+    linoone: {
+            "type": "choice",
+            "forms": [
+                "normal",
+                "galar"
+            ]
+        },
+    gardevoir: {
+            "type": "temporary",
+            "forms": [
+                "normal",
+                "mega"
+            ]
+        },
+    sableye: {
+            "type": "temporary",
+            "forms": [
+                "normal",
+                "mega"
+            ]
+        },
+    mawile: {
+            "type": "temporary",
+            "forms": [
+                "normal",
+                "mega"
+            ]
+        },
+    aggron: {
+            "type": "temporary",
+            "forms": [
+                "normal",
+                "mega"
+            ]
+        },
+    medicham: {
+            "type": "temporary",
+            "forms": [
+                "normal",
+                "mega"
+            ]
+        },
+    manectric: {
+            "type": "temporary",
+            "forms": [
+                "normal",
+                "mega"
+            ]
+        },
+    sharpedo: {
+            "type": "temporary",
+            "forms": [
+                "normal",
+                "mega"
+            ]
+        },
+    camerupt: {
+            "type": "temporary",
+            "forms": [
+                "normal",
+                "mega"
+            ]
+        },
+    altaria: {
+            "type": "temporary",
+            "forms": [
+                "normal",
+                "mega"
+            ]
+        },
+    castform: {
+            "type": "switch",
+            "default": "normal",
+            "forms": [
+                "normal",
+                "sunny",
+                "rainy",
+                "snowy"
+            ]
+        },
+    banette: {
+            "type": "temporary",
+            "forms": [
+                "normal",
+                "mega"
+            ]
+        },
+    chimecho: {
+            "type": "temporary",
+            "forms": [
+                "normal",
+                "mega"
+            ]
+        },
+    absol: {
+            "type": "temporary",
+            "forms": [
+                "normal",
+                "mega",
+                "mega-z"
+            ]
+        },
+    glalie: {
+            "type": "temporary",
+            "forms": [
+                "normal",
+                "mega"
+            ]
+        },
+    salamence: {
+            "type": "temporary",
+            "forms": [
+                "normal",
+                "mega"
+            ]
+        },
+    metagross: {
+            "type": "temporary",
+            "forms": [
+                "normal",
+                "mega"
+            ]
+        },
+    latias: {
+            "type": "temporary",
+            "forms": [
+                "normal",
+                "mega"
+            ]
+        },
+    latios: {
+            "type": "temporary",
+            "forms": [
+                "normal",
+                "mega"
+            ]
+        },
+    kyogre: {
+            "type": "temporary",
+            "forms": [
+                "normal",
+                "primal"
+            ]
+        },
+    groudon: {
+            "type": "temporary",
+            "forms": [
+                "normal",
+                "primal"
+            ]
+        },
+    rayquaza: {
+            "type": "temporary",
+            "forms": [
+                "normal",
+                "mega"
+            ]
+        },
+    deoxys: {
+            "type": "switch",
+            "default": "normal",
+            "forms": [
+                "normal",
+                "attack",
+                "defense",
+                "speed"
+            ]
+        },
+    staraptor: {
+            "type": "temporary",
+            "forms": [
+                "normal",
+                "mega"
+            ]
+        },
+    wormadam: {
+            "type": "choice",
+            "forms": [
+                "normal",
+                "plant",
+                "sandy",
+                "trash"
+            ]
+        },
+    lopunny: {
+            "type": "temporary",
+            "forms": [
+                "normal",
+                "mega"
+            ]
+        },
+    garchomp: {
+            "type": "temporary",
+            "forms": [
+                "normal",
+                "mega",
+                "mega-z"
+            ]
+        },
+    lucario: {
+            "type": "temporary",
+            "forms": [
+                "normal",
+                "mega",
+                "mega-z"
+            ]
+        },
+    abomasnow: {
+            "type": "temporary",
+            "forms": [
+                "normal",
+                "mega"
+            ]
+        },
+    gallade: {
+            "type": "temporary",
+            "forms": [
+                "normal",
+                "mega"
+            ]
+        },
+    froslass: {
+            "type": "temporary",
+            "forms": [
+                "normal",
+                "mega"
+            ]
+        },
+    rotom: {
+            "type": "switch",
+            "default": "normal",
+            "forms": [
+                "normal",
+                "heat",
+                "wash",
+                "frost",
+                "fan",
+                "mow"
+            ]
+        },
+    dialga: {
+            "type": "switch",
+            "default": "normal",
+            "forms": [
+                "normal",
+                "origin"
+            ]
+        },
+    palkia: {
+            "type": "switch",
+            "default": "normal",
+            "forms": [
+                "normal",
+                "origin"
+            ]
+        },
+    heatran: {
+            "type": "temporary",
+            "forms": [
+                "normal",
+                "mega"
+            ]
+        },
+    giratina: {
+            "type": "switch",
+            "default": "normal",
+            "forms": [
+                "normal",
+                "altered",
+                "origin"
+            ]
+        },
+    darkrai: {
+            "type": "temporary",
+            "forms": [
+                "normal",
+                "mega"
+            ]
+        },
+    shaymin: {
+            "type": "switch",
+            "default": "normal",
+            "forms": [
+                "normal",
+                "land",
+                "sky"
+            ]
+        },
+    emboar: {
+            "type": "temporary",
+            "forms": [
+                "normal",
+                "mega"
+            ]
+        },
+    samurott: {
+            "type": "choice",
+            "forms": [
+                "normal",
+                "hisui"
+            ]
+        },
+    excadrill: {
+            "type": "temporary",
+            "forms": [
+                "normal",
+                "mega"
+            ]
+        },
+    audino: {
+            "type": "temporary",
+            "forms": [
+                "normal",
+                "mega"
+            ]
+        },
+    scolipede: {
+            "type": "temporary",
+            "forms": [
+                "normal",
+                "mega"
+            ]
+        },
+    lilligant: {
+            "type": "choice",
+            "forms": [
+                "normal",
+                "hisui"
+            ]
+        },
+    basculin: {
+            "type": "choice",
+            "forms": [
+                "normal",
+                "red-striped",
+                "blue-striped",
+                "white-striped"
+            ]
+        },
+    darumaka: {
+            "type": "choice",
+            "forms": [
+                "normal",
+                "galar"
+            ]
+        },
+    darmanitan: {
+            "type": "mutable",
+            "default": "normal",
+            "forms": [
+                "normal",
+                "standard",
+                "zen",
+                "galar-standard",
+                "galar-zen"
+            ]
+        },
+    scrafty: {
+            "type": "temporary",
+            "forms": [
+                "normal",
+                "mega"
+            ]
+        },
+    yamask: {
+            "type": "choice",
+            "forms": [
+                "normal",
+                "galar"
+            ]
+        },
+    garbodor: {
+            "type": "temporary",
+            "forms": [
+                "normal",
+                "gmax"
+            ]
+        },
+    zorua: {
+            "type": "choice",
+            "forms": [
+                "normal",
+                "hisui"
+            ]
+        },
+    zoroark: {
+            "type": "choice",
+            "forms": [
+                "normal",
+                "hisui"
+            ]
+        },
+    frillish: {
+            "type": "determined",
+            "by": "gender",
+            "forms": {
+                "M": "male",
+                "F": "normal"
+            }
+        },
+    jellicent: {
+            "type": "determined",
+            "by": "gender",
+            "forms": {
+                "M": "male",
+                "F": "normal"
+            }
+        },
+    eelektross: {
+            "type": "temporary",
+            "forms": [
+                "normal",
+                "mega"
+            ]
+        },
+    chandelure: {
+            "type": "temporary",
+            "forms": [
+                "normal",
+                "mega"
+            ]
+        },
+    stunfisk: {
+            "type": "choice",
+            "forms": [
+                "normal",
+                "galar"
+            ]
+        },
+    golurk: {
+            "type": "temporary",
+            "forms": [
+                "normal",
+                "mega"
+            ]
+        },
+    braviary: {
+            "type": "choice",
+            "forms": [
+                "normal",
+                "hisui"
+            ]
+        },
+    tornadus: {
+            "type": "switch",
+            "default": "normal",
+            "forms": [
+                "normal",
+                "incarnate",
+                "therian"
+            ]
+        },
+    thundurus: {
+            "type": "switch",
+            "default": "normal",
+            "forms": [
+                "normal",
+                "incarnate",
+                "therian"
+            ]
+        },
+    landorus: {
+            "type": "switch",
+            "default": "normal",
+            "forms": [
+                "normal",
+                "incarnate",
+                "therian"
+            ]
+        },
+    kyurem: {
+            "type": "switch",
+            "default": "normal",
+            "forms": [
+                "normal",
+                "black",
+                "white"
+            ]
+        },
+    keldeo: {
+            "type": "switch",
+            "default": "normal",
+            "forms": [
+                "normal",
+                "ordinary",
+                "resolute"
+            ]
+        },
+    meloetta: {
+            "type": "switch",
+            "default": "normal",
+            "forms": [
+                "normal",
+                "aria",
+                "pirouette"
+            ]
+        },
+    chesnaught: {
+            "type": "temporary",
+            "forms": [
+                "normal",
+                "mega"
+            ]
+        },
+    delphox: {
+            "type": "temporary",
+            "forms": [
+                "normal",
+                "mega"
+            ]
+        },
+    greninja: {
+            "type": "temporary",
+            "forms": [
+                "normal",
+                "battle-bond",
+                "ash",
+                "mega"
+            ]
+        },
+    pyroar: {
+            "type": "temporary",
+            "forms": [
+                "normal",
+                "male",
+                "mega"
+            ]
+        },
+    floette: {
+            "type": "temporary",
+            "forms": [
+                "normal",
+                "eternal",
+                "mega"
+            ]
+        },
+    meowstic: {
+            "type": "determined",
+            "by": "gender",
+            "forms": {
+                "M": "normal",
+                "F": "female"
+            }
+        },
+    aegislash: {
+            "type": "mutable",
+            "default": "normal",
+            "forms": [
+                "normal",
+                "shield",
+                "blade"
+            ]
+        },
+    malamar: {
+            "type": "temporary",
+            "forms": [
+                "normal",
+                "mega"
+            ]
+        },
+    barbaracle: {
+            "type": "temporary",
+            "forms": [
+                "normal",
+                "mega"
+            ]
+        },
+    dragalge: {
+            "type": "temporary",
+            "forms": [
+                "normal",
+                "mega"
+            ]
+        },
+    hawlucha: {
+            "type": "temporary",
+            "forms": [
+                "normal",
+                "mega"
+            ]
+        },
+    sliggoo: {
+            "type": "choice",
+            "forms": [
+                "normal",
+                "hisui"
+            ]
+        },
+    goodra: {
+            "type": "choice",
+            "forms": [
+                "normal",
+                "hisui"
+            ]
+        },
+    pumpkaboo: {
+            "type": "choice",
+            "forms": [
+                "normal",
+                "average",
+                "small",
+                "large",
+                "super"
+            ]
+        },
+    gourgeist: {
+            "type": "choice",
+            "forms": [
+                "normal",
+                "average",
+                "small",
+                "large",
+                "super"
+            ]
+        },
+    avalugg: {
+            "type": "choice",
+            "forms": [
+                "normal",
+                "hisui"
+            ]
+        },
+    zygarde: {
+            "type": "temporary",
+            "forms": [
+                "normal",
+                "10",
+                "50",
+                "10-power-construct",
+                "50-power-construct",
+                "complete",
+                "mega"
+            ]
+        },
+    diancie: {
+            "type": "temporary",
+            "forms": [
+                "normal",
+                "mega"
+            ]
+        },
+    hoopa: {
+            "type": "choice",
+            "forms": [
+                "normal",
+                "unbound"
+            ]
+        },
+    decidueye: {
+            "type": "choice",
+            "forms": [
+                "normal",
+                "hisui"
+            ]
+        },
+    gumshoos: {
+            "type": "temporary",
+            "forms": [
+                "normal",
+                "totem"
+            ]
+        },
+    vikavolt: {
+            "type": "temporary",
+            "forms": [
+                "normal",
+                "totem"
+            ]
+        },
+    crabominable: {
+            "type": "temporary",
+            "forms": [
+                "normal",
+                "mega"
+            ]
+        },
+    oricorio: {
+            "type": "choice",
+            "forms": [
+                "normal",
+                "baile",
+                "pom-pom",
+                "pau",
+                "sensu"
+            ]
+        },
+    ribombee: {
+            "type": "temporary",
+            "forms": [
+                "normal",
+                "totem"
+            ]
+        },
+    rockruff: {
+            "type": "choice",
+            "forms": [
+                "normal",
+                "own-tempo"
+            ]
+        },
+    lycanroc: {
+            "type": "choice",
+            "forms": [
+                "normal",
+                "midday",
+                "midnight",
+                "dusk"
+            ]
+        },
+    wishiwashi: {
+            "type": "mutable",
+            "default": "normal",
+            "forms": [
+                "normal",
+                "solo",
+                "school"
+            ]
+        },
+    araquanid: {
+            "type": "temporary",
+            "forms": [
+                "normal",
+                "totem"
+            ]
+        },
+    lurantis: {
+            "type": "temporary",
+            "forms": [
+                "normal",
+                "totem"
+            ]
+        },
+    salazzle: {
+            "type": "temporary",
+            "forms": [
+                "normal",
+                "totem"
+            ]
+        },
+    golisopod: {
+            "type": "temporary",
+            "forms": [
+                "normal",
+                "mega"
+            ]
+        },
+    minior: {
+            "type": "mutable",
+            "default": "normal",
+            "forms": [
+                "normal",
+                "red-meteor",
+                "orange-meteor",
+                "yellow-meteor",
+                "green-meteor",
+                "blue-meteor",
+                "indigo-meteor",
+                "violet-meteor",
+                "red",
+                "orange",
+                "yellow",
+                "green",
+                "blue",
+                "indigo",
+                "violet"
+            ]
+        },
+    togedemaru: {
+            "type": "temporary",
+            "forms": [
+                "normal",
+                "totem"
+            ]
+        },
+    mimikyu: {
+            "type": "choice",
+            "forms": [
+                "normal",
+                "disguised",
+                "busted",
+                "totem-disguised",
+                "totem-busted"
+            ]
+        },
+    drampa: {
+            "type": "temporary",
+            "forms": [
+                "normal",
+                "mega"
+            ]
+        },
+    kommo-o: {
+            "type": "temporary",
+            "forms": [
+                "normal",
+                "totem"
+            ]
+        },
+    necrozma: {
+            "type": "choice",
+            "forms": [
+                "normal",
+                "dusk",
+                "dawn",
+                "ultra"
+            ]
+        },
+    magearna: {
+            "type": "temporary",
+            "forms": [
+                "normal",
+                "original",
+                "mega",
+                "original-mega"
+            ]
+        },
+    zeraora: {
+            "type": "temporary",
+            "forms": [
+                "normal",
+                "mega"
+            ]
+        },
+    melmetal: {
+            "type": "temporary",
+            "forms": [
+                "normal",
+                "gmax"
+            ]
+        },
+    rillaboom: {
+            "type": "temporary",
+            "forms": [
+                "normal",
+                "gmax"
+            ]
+        },
+    cinderace: {
+            "type": "temporary",
+            "forms": [
+                "normal",
+                "gmax"
+            ]
+        },
+    inteleon: {
+            "type": "temporary",
+            "forms": [
+                "normal",
+                "gmax"
+            ]
+        },
+    corviknight: {
+            "type": "temporary",
+            "forms": [
+                "normal",
+                "gmax"
+            ]
+        },
+    orbeetle: {
+            "type": "temporary",
+            "forms": [
+                "normal",
+                "gmax"
+            ]
+        },
+    drednaw: {
+            "type": "temporary",
+            "forms": [
+                "normal",
+                "gmax"
+            ]
+        },
+    coalossal: {
+            "type": "temporary",
+            "forms": [
+                "normal",
+                "gmax"
+            ]
+        },
+    flapple: {
+            "type": "temporary",
+            "forms": [
+                "normal",
+                "gmax"
+            ]
+        },
+    appletun: {
+            "type": "temporary",
+            "forms": [
+                "normal",
+                "gmax"
+            ]
+        },
+    sandaconda: {
+            "type": "temporary",
+            "forms": [
+                "normal",
+                "gmax"
+            ]
+        },
+    cramorant: {
+            "type": "choice",
+            "forms": [
+                "normal",
+                "gulping",
+                "gorging"
+            ]
+        },
+    toxtricity: {
+            "type": "choice",
+            "forms": [
+                "normal",
+                "amped",
+                "low-key",
+                "amped-gmax",
+                "low-key-gmax"
+            ]
+        },
+    centiskorch: {
+            "type": "temporary",
+            "forms": [
+                "normal",
+                "gmax"
+            ]
+        },
+    hatterene: {
+            "type": "temporary",
+            "forms": [
+                "normal",
+                "gmax"
+            ]
+        },
+    grimmsnarl: {
+            "type": "temporary",
+            "forms": [
+                "normal",
+                "gmax"
+            ]
+        },
+    alcremie: {
+            "type": "temporary",
+            "forms": [
+                "normal",
+                "gmax"
+            ]
+        },
+    falinks: {
+            "type": "temporary",
+            "forms": [
+                "normal",
+                "mega"
+            ]
+        },
+    eiscue: {
+            "type": "choice",
+            "forms": [
+                "normal",
+                "ice",
+                "noice"
+            ]
+        },
+    indeedee: {
+            "type": "determined",
+            "by": "gender",
+            "forms": {
+                "M": "normal",
+                "F": "female"
+            }
+        },
+    morpeko: {
+            "type": "mutable",
+            "default": "normal",
+            "forms": [
+                "normal",
+                "full-belly",
+                "hangry"
+            ]
+        },
+    copperajah: {
+            "type": "temporary",
+            "forms": [
+                "normal",
+                "gmax"
+            ]
+        },
+    duraludon: {
+            "type": "temporary",
+            "forms": [
+                "normal",
+                "gmax"
+            ]
+        },
+    zacian: {
+            "type": "choice",
+            "forms": [
+                "normal",
+                "crowned"
+            ]
+        },
+    zamazenta: {
+            "type": "choice",
+            "forms": [
+                "normal",
+                "crowned"
+            ]
+        },
+    eternatus: {
+            "type": "choice",
+            "forms": [
+                "normal",
+                "eternamax"
+            ]
+        },
+    urshifu: {
+            "type": "choice",
+            "forms": [
+                "normal",
+                "single-strike",
+                "rapid-strike",
+                "single-strike-gmax",
+                "rapid-strike-gmax"
+            ]
+        },
+    zarude: {
+            "type": "choice",
+            "forms": [
+                "normal",
+                "dada"
+            ]
+        },
+    calyrex: {
+            "type": "choice",
+            "forms": [
+                "normal",
+                "ice",
+                "shadow"
+            ]
+        },
+    ursaluna: {
+            "type": "choice",
+            "forms": [
+                "normal",
+                "bloodmoon"
+            ]
+        },
+    basculegion: {
+            "type": "determined",
+            "by": "gender",
+            "forms": {
+                "M": "normal",
+                "F": "female"
+            }
+        },
+    enamorus: {
+            "type": "switch",
+            "default": "normal",
+            "forms": [
+                "normal",
+                "incarnate",
+                "therian"
+            ]
+        },
+    oinkologne: {
+            "type": "determined",
+            "by": "gender",
+            "forms": {
+                "M": "normal",
+                "F": "female"
+            }
+        },
+    maushold: {
+            "type": "choice",
+            "forms": [
+                "normal",
+                "family-of-four",
+                "family-of-three"
+            ]
+        },
+    squawkabilly: {
+            "type": "choice",
+            "forms": [
+                "normal",
+                "green-plumage",
+                "blue-plumage",
+                "yellow-plumage",
+                "white-plumage"
+            ]
+        },
+    scovillain: {
+            "type": "temporary",
+            "forms": [
+                "normal",
+                "mega"
+            ]
+        },
+    palafin: {
+            "type": "mutable",
+            "default": "normal",
+            "forms": [
+                "normal",
+                "zero",
+                "hero"
+            ]
+        },
+    glimmora: {
+            "type": "temporary",
+            "forms": [
+                "normal",
+                "mega"
+            ]
+        },
+    tatsugiri: {
+            "type": "choice",
+            "forms": [
+                "normal",
+                "curly",
+                "droopy",
+                "stretchy",
+                "curly-mega",
+                "droopy-mega",
+                "stretchy-mega"
+            ]
+        },
+    dudunsparce: {
+            "type": "choice",
+            "forms": [
+                "normal",
+                "two-segment",
+                "three-segment"
+            ]
+        },
+    baxcalibur: {
+            "type": "temporary",
+            "forms": [
+                "normal",
+                "mega"
+            ]
+        },
+    gimmighoul: {
+            "type": "choice",
+            "forms": [
+                "normal",
+                "roaming"
+            ]
+        },
+    koraidon: {
+            "type": "choice",
+            "forms": [
+                "normal",
+                "limited-build",
+                "sprinting-build",
+                "swimming-build",
+                "gliding-build"
+            ]
+        },
+    miraidon: {
+            "type": "choice",
+            "forms": [
+                "normal",
+                "low-power-mode",
+                "drive-mode",
+                "aquatic-mode",
+                "glide-mode"
+            ]
+        },
+    ogerpon: {
+            "type": "choice",
+            "forms": [
+                "normal",
+                "wellspring-mask",
+                "hearthflame-mask",
+                "cornerstone-mask"
+            ]
+        },
+    terapagos: {
+            "type": "choice",
+            "forms": [
+                "normal",
+                "terastal",
+                "stellar"
+            ]
+        },

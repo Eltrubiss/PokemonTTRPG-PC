@@ -1,0 +1,927 @@
+[
+  { "slug": "hardy",
+    "nombre": "Fuerte",
+    "rasgos": [
+      {
+        "slug": "plays-in-mud",
+        "texto": "Le gusta jugar en el barro."
+      },
+      {
+        "slug": "likes-running",
+        "texto": "Siempre está corriendo de un lado a otro."
+      },
+      {
+        "slug": "collects-objects",
+        "texto": "Le gusta coleccionar objetos curiosos."
+      },
+      {
+        "slug": "sleeps-anywhere",
+        "texto": "Puede quedarse dormido en cualquier lugar."
+      },
+      {
+        "slug": "curious-look",
+        "texto": "Observa con curiosidad todo lo que ocurre a su alrededor."
+      },
+      {
+        "slug": "likes-playing",
+        "texto": "Siempre parece dispuesto a jugar."
+      },
+      {
+        "slug": "protective",
+        "texto": "Suele colocarse delante de sus compañeros."
+      },
+      {
+        "slug": "fearless",
+        "texto": "No parece asustarse fácilmente."
+      }
+    ]
+  },
+  { "slug": "lonely",
+    "nombre": "Solitaria",
+    "rasgos": [
+      {
+        "slug": "keeps-distance",
+        "texto": "Prefiere mantener cierta distancia de los demás."
+      },
+      {
+        "slug": "quietly-observes",
+        "texto": "Pasa largos ratos observando en silencio."
+      },
+      {
+        "slug": "walks-alone",
+        "texto": "Suele alejarse para explorar por su cuenta."
+      },
+      {
+        "slug": "rarely-seeks-attention",
+        "texto": "No suele llamar la atención."
+      },
+      {
+        "slug": "independent",
+        "texto": "Le gusta resolver las cosas por sí mismo."
+      },
+      {
+        "slug": "calm-rest",
+        "texto": "Busca lugares tranquilos para descansar."
+      },
+      {
+        "slug": "slow-trust",
+        "texto": "Tarda un poco en confiar en los desconocidos."
+      },
+      {
+        "slug": "returns-loyal",
+        "texto": "Siempre regresa junto a quienes aprecia."
+      }
+    ]
+  },
+  { "slug": "brave",
+    "nombre": "Audaz",
+    "rasgos": [
+      {
+        "slug": "faces-anything",
+        "texto": "Se enfrenta a cualquier situación sin dudar."
+      },
+      {
+        "slug": "first-step",
+        "texto": "Siempre da el primer paso."
+      },
+      {
+        "slug": "protects-others",
+        "texto": "No duda en proteger a otros."
+      },
+      {
+        "slug": "never-hides",
+        "texto": "Rara vez intenta esconderse."
+      },
+      {
+        "slug": "likes-challenges",
+        "texto": "Parece disfrutar los desafíos."
+      },
+      {
+        "slug": "stands-tall",
+        "texto": "Mantiene una postura firme incluso en situaciones difíciles."
+      },
+      {
+        "slug": "acts-fast",
+        "texto": "Prefiere actuar antes que quedarse quieto."
+      },
+      {
+        "slug": "determined",
+        "texto": "Cuesta mucho hacerle cambiar de idea."
+      }
+    ]
+  },
+  { "slug": "adamant",
+    "nombre": "Firme",
+    "rasgos": [
+      {
+        "slug": "stubborn",
+        "texto": "Es bastante terco cuando toma una decisión."
+      },
+      {
+        "slug": "routine",
+        "texto": "Le gustan las rutinas."
+      },
+      {
+        "slug": "patient-worker",
+        "texto": "Trabaja con paciencia hasta terminar lo que empieza."
+      },
+      {
+        "slug": "focused",
+        "texto": "Le cuesta distraerse."
+      },
+      {
+        "slug": "calm-confidence",
+        "texto": "Transmite una confianza tranquila."
+      },
+      {
+        "slug": "disciplined",
+        "texto": "Sigue las instrucciones con facilidad."
+      },
+      {
+        "slug": "keeps-promises",
+        "texto": "Parece tomarse muy en serio sus responsabilidades."
+      },
+      {
+        "slug": "steady",
+        "texto": "Rara vez pierde la calma."
+      }
+    ]
+  },
+  { "slug": "naughty",
+    "nombre": "Pícara",
+    "rasgos": [
+      {
+        "slug": "plays-pranks",
+        "texto": "Le encanta gastar pequeñas bromas."
+      },
+      {
+        "slug": "hides-things",
+        "texto": "A veces esconde objetos por diversión."
+      },
+      {
+        "slug": "cheeky-look",
+        "texto": "Tiene una expresión traviesa casi todo el tiempo."
+      },
+      {
+        "slug": "curious-touch",
+        "texto": "No puede evitar tocar todo lo que encuentra."
+      },
+      {
+        "slug": "likes-surprises",
+        "texto": "Parece disfrutar sorprendiendo a los demás."
+      },
+      {
+        "slug": "restless",
+        "texto": "Le cuesta permanecer quieto durante mucho tiempo."
+      },
+      {
+        "slug": "teasing",
+        "texto": "Le gusta llamar la atención con pequeñas travesuras."
+      },
+      {
+        "slug": "playful-energy",
+        "texto": "Siempre parece tener energía para seguir jugando."
+      }
+    ]
+  },
+  { "slug": "bold",
+    "nombre": "Serena",
+    "rasgos": [
+      {
+        "slug": "stands-ground",
+        "texto": "Mantiene la calma incluso en situaciones tensas."
+      },
+      {
+        "slug": "helps-others",
+        "texto": "Suele acercarse cuando alguien necesita ayuda."
+      },
+      {
+        "slug": "steady-gaze",
+        "texto": "Observa a los demás con tranquilidad."
+      },
+      {
+        "slug": "patient-listener",
+        "texto": "Espera pacientemente antes de actuar."
+      },
+      {
+        "slug": "reliable",
+        "texto": "Parece transmitir seguridad a quienes lo rodean."
+      },
+      {
+        "slug": "calm-presence",
+        "texto": "Su presencia resulta sorprendentemente relajante."
+      },
+      {
+        "slug": "faces-storm",
+        "texto": "No pierde la compostura ante los problemas."
+      },
+      {
+        "slug": "protective-instinct",
+        "texto": "Tiende a colocarse entre el peligro y sus compañeros."
+      }
+    ]
+  },
+  { "slug": "docile",
+    "nombre": "Dócil",
+    "rasgos": [
+      {
+        "slug": "easy-going",
+        "texto": "Se adapta fácilmente a cualquier situación."
+      },
+      {
+        "slug": "likes-company",
+        "texto": "Disfruta de la compañía de otros."
+      },
+      {
+        "slug": "patient",
+        "texto": "Tiene mucha paciencia."
+      },
+      {
+        "slug": "trusting",
+        "texto": "Confía rápidamente en quienes le tratan con cariño."
+      },
+      {
+        "slug": "peaceful",
+        "texto": "Prefiere evitar los conflictos."
+      },
+      {
+        "slug": "gentle",
+        "texto": "Suele comportarse con mucha delicadeza."
+      },
+      {
+        "slug": "happy-helper",
+        "texto": "Siempre parece dispuesto a colaborar."
+      },
+      {
+        "slug": "follows-willingly",
+        "texto": "Le gusta seguir a su entrenador de cerca."
+      }
+    ]
+  },
+  { "slug": "relaxed",
+    "nombre": "Plácida",
+    "rasgos": [
+      {
+        "slug": "takes-time",
+        "texto": "Nunca parece tener prisa."
+      },
+      {
+        "slug": "likes-rest",
+        "texto": "Disfruta de los momentos de descanso."
+      },
+      {
+        "slug": "slow-walk",
+        "texto": "Camina con paso tranquilo."
+      },
+      {
+        "slug": "sun-bather",
+        "texto": "Le gusta permanecer bajo el sol cuando puede."
+      },
+      {
+        "slug": "patient-observer",
+        "texto": "Prefiere observar antes de actuar."
+      },
+      {
+        "slug": "deep-sleeper",
+        "texto": "Tiene un sueño muy profundo."
+      },
+      {
+        "slug": "enjoys-silence",
+        "texto": "Parece disfrutar de los lugares silenciosos."
+      },
+      {
+        "slug": "calm-eater",
+        "texto": "Come despacio, saboreando cada bocado."
+      }
+    ]
+  },
+  { "slug": "impish",
+    "nombre": "Agitada",
+    "rasgos": [
+      {
+        "slug": "playful-tease",
+        "texto": "Le gusta provocar pequeñas travesuras."
+      },
+      {
+        "slug": "curious-nose",
+        "texto": "Siempre mete la nariz donde no la llaman."
+      },
+      {
+        "slug": "laughs-often",
+        "texto": "Parece divertirse con casi cualquier cosa."
+      },
+      {
+        "slug": "likes-chasing",
+        "texto": "Disfruta persiguiendo a otros Pokémon."
+      },
+      {
+        "slug": "energetic",
+        "texto": "Tiene una energía difícil de agotar."
+      },
+      {
+        "slug": "mischief",
+        "texto": "Siempre encuentra una nueva travesura que hacer."
+      },
+      {
+        "slug": "attention-seeker",
+        "texto": "Le gusta llamar la atención."
+      },
+      {
+        "slug": "unexpected",
+        "texto": "Es difícil predecir qué hará después."
+      }
+    ]
+  },
+  { "slug": "lax",
+    "nombre": "Floja",
+    "rasgos": [
+      {
+        "slug": "carefree",
+        "texto": "Se toma la vida con mucha calma."
+      },
+      {
+        "slug": "late-reaction",
+        "texto": "Suele reaccionar unos segundos más tarde que los demás."
+      },
+      {
+        "slug": "likes-lounging",
+        "texto": "Le gusta tumbarse a descansar siempre que puede."
+      },
+      {
+        "slug": "easy-smile",
+        "texto": "Rara vez pierde el buen humor."
+      },
+      {
+        "slug": "takes-detours",
+        "texto": "Se distrae fácilmente durante los paseos."
+      },
+      {
+        "slug": "friendly",
+        "texto": "Hace amigos con bastante facilidad."
+      },
+      {
+        "slug": "slow-awakening",
+        "texto": "Le cuesta un poco empezar el día."
+      },
+      {
+        "slug": "enjoys-simple-things",
+        "texto": "Parece disfrutar de las cosas más sencillas."
+      }
+    ]
+  },
+  { "slug": "timid",
+    "nombre": "Miedosa",
+    "rasgos": [
+      {
+        "slug": "avoids-noise",
+        "texto": "Los ruidos fuertes parecen ponerle nervioso."
+      },
+      {
+        "slug": "hides-behind-trainer",
+        "texto": "Busca refugio cerca de su entrenador cuando duda."
+      },
+      {
+        "slug": "careful-first-step",
+        "texto": "Siempre observa antes de dar el primer paso."
+      },
+      {
+        "slug": "jumps-easily",
+        "texto": "Se sobresalta con bastante facilidad."
+      },
+      {
+        "slug": "soft-voice",
+        "texto": "Sus sonidos suelen ser suaves y discretos."
+      },
+      {
+        "slug": "likes-safe-places",
+        "texto": "Prefiere permanecer en lugares donde se siente seguro."
+      },
+      {
+        "slug": "looks-for-company",
+        "texto": "Le tranquiliza saber que alguien está cerca."
+      },
+      {
+        "slug": "avoids-risk",
+        "texto": "Evita asumir riesgos innecesarios."
+      }
+    ]
+  },
+  { "slug": "hasty",
+    "nombre": "Activa",
+    "rasgos": [
+      {
+        "slug": "always-moving",
+        "texto": "Le cuesta permanecer quieto."
+      },
+      {
+        "slug": "acts-immediately",
+        "texto": "Prefiere actuar antes que esperar."
+      },
+      {
+        "slug": "explores-first",
+        "texto": "Siempre intenta descubrir qué hay más adelante."
+      },
+      {
+        "slug": "impatient",
+        "texto": "La espera parece desesperarle."
+      },
+      {
+        "slug": "quick-curiosity",
+        "texto": "Todo despierta rápidamente su curiosidad."
+      },
+      {
+        "slug": "likes-races",
+        "texto": "Disfruta compitiendo incluso por diversión."
+      },
+      {
+        "slug": "quick-recovery",
+        "texto": "Olvida rápidamente los pequeños tropiezos."
+      },
+      {
+        "slug": "constant-energy",
+        "texto": "Siempre parece tener energía de sobra."
+      }
+    ]
+  },
+  { "slug": "serious",
+    "nombre": "Seria",
+    "rasgos": [
+      {
+        "slug": "always-focused",
+        "texto": "Parece concentrado casi todo el tiempo."
+      },
+      {
+        "slug": "rarely-plays",
+        "texto": "Rara vez se distrae jugando."
+      },
+      {
+        "slug": "disciplined",
+        "texto": "Sigue las rutinas con facilidad."
+      },
+      {
+        "slug": "careful-observer",
+        "texto": "Analiza cada situación antes de actuar."
+      },
+      {
+        "slug": "keeps-order",
+        "texto": "Le gusta mantener todo en orden."
+      },
+      {
+        "slug": "calm-expression",
+        "texto": "Su expresión cambia muy poco."
+      },
+      {
+        "slug": "determined-worker",
+        "texto": "No abandona una tarea hasta terminarla."
+      },
+      {
+        "slug": "trustworthy",
+        "texto": "Parece alguien en quien siempre se puede confiar."
+      }
+    ]
+  },
+  { "slug": "jolly",
+    "nombre": "Alegre",
+    "rasgos": [
+      {
+        "slug": "happy-bounce",
+        "texto": "Siempre parece moverse con entusiasmo."
+      },
+      {
+        "slug": "shares-joy",
+        "texto": "Su buen humor resulta contagioso."
+      },
+      {
+        "slug": "likes-games",
+        "texto": "Nunca rechaza una oportunidad para jugar."
+      },
+      {
+        "slug": "friendly-greeting",
+        "texto": "Recibe con entusiasmo a quienes conoce."
+      },
+      {
+        "slug": "optimistic",
+        "texto": "Parece encontrar algo bueno en cualquier situación."
+      },
+      {
+        "slug": "likes-company",
+        "texto": "Disfruta estando rodeado de otros."
+      },
+      {
+        "slug": "playful-smile",
+        "texto": "Siempre parece tener una sonrisa en el rostro."
+      },
+      {
+        "slug": "cheers-others",
+        "texto": "Su actitud anima fácilmente a quienes le rodean."
+      }
+    ]
+  },
+  { "slug": "naive",
+    "nombre": "Ingenua",
+    "rasgos": [
+      {
+        "slug": "trusts-everyone",
+        "texto": "Confía con facilidad en los demás."
+      },
+      {
+        "slug": "endless-curiosity",
+        "texto": "Todo parece sorprenderle."
+      },
+      {
+        "slug": "asks-with-eyes",
+        "texto": "Observa las cosas como si las viera por primera vez."
+      },
+      {
+        "slug": "follows-butterflies",
+        "texto": "Se distrae siguiendo cualquier cosa interesante."
+      },
+      {
+        "slug": "pure-heart",
+        "texto": "Parece incapaz de guardar rencor."
+      },
+      {
+        "slug": "innocent-play",
+        "texto": "Disfruta de los juegos más simples."
+      },
+      {
+        "slug": "likes-new-friends",
+        "texto": "Hace amigos con mucha facilidad."
+      },
+      {
+        "slug": "curious-spirit",
+        "texto": "Siempre quiere descubrir algo nuevo."
+      }
+    ]
+  },
+  { "slug": "modest",
+    "nombre": "Modesta",
+    "rasgos": [
+      {
+        "slug": "avoids-attention",
+        "texto": "No parece disfrutar siendo el centro de atención."
+      },
+      {
+        "slug": "quiet-worker",
+        "texto": "Prefiere demostrar lo que vale con acciones."
+      },
+      {
+        "slug": "shares-food",
+        "texto": "Le gusta compartir lo que encuentra."
+      },
+      {
+        "slug": "lets-others-first",
+        "texto": "Suele dejar que otros actúen primero."
+      },
+      {
+        "slug": "gentle-smile",
+        "texto": "Responde con una sonrisa discreta."
+      },
+      {
+        "slug": "avoids-conflict",
+        "texto": "Hace lo posible por evitar discusiones."
+      },
+      {
+        "slug": "patient-helper",
+        "texto": "Siempre parece dispuesto a ayudar."
+      },
+      {
+        "slug": "simple-joys",
+        "texto": "Disfruta de las cosas sencillas."
+      }
+    ]
+  },
+  { "slug": "mild",
+    "nombre": "Afable",
+    "rasgos": [
+      {
+        "slug": "welcomes-all",
+        "texto": "Recibe con amabilidad a cualquiera."
+      },
+      {
+        "slug": "soft-hearted",
+        "texto": "Se preocupa fácilmente por los demás."
+      },
+      {
+        "slug": "likes-company",
+        "texto": "Disfruta estando acompañado."
+      },
+      {
+        "slug": "kind-eyes",
+        "texto": "Tiene una mirada tranquila y amistosa."
+      },
+      {
+        "slug": "comforts-others",
+        "texto": "Intenta consolar a quien lo necesita."
+      },
+      {
+        "slug": "friendly-nature",
+        "texto": "Hace amigos con facilidad."
+      },
+      {
+        "slug": "shares-rest",
+        "texto": "Le gusta descansar junto a otros Pokémon."
+      },
+      {
+        "slug": "easy-trust",
+        "texto": "Confía rápidamente en quienes conoce."
+      }
+    ]
+  },
+  { "slug": "quiet",
+    "nombre": "Tímida",
+    "rasgos": [
+      {
+        "slug": "silent-steps",
+        "texto": "Se mueve haciendo muy poco ruido."
+      },
+      {
+        "slug": "few-sounds",
+        "texto": "Rara vez hace sonidos innecesarios."
+      },
+      {
+        "slug": "careful-observer",
+        "texto": "Prefiere escuchar antes que intervenir."
+      },
+      {
+        "slug": "hidden-corner",
+        "texto": "Busca rincones tranquilos para descansar."
+      },
+      {
+        "slug": "calm-presence",
+        "texto": "Su presencia apenas altera el ambiente."
+      },
+      {
+        "slug": "deep-thought",
+        "texto": "Parece pasar mucho tiempo pensando."
+      },
+      {
+        "slug": "avoids-crowds",
+        "texto": "No parece disfrutar de las multitudes."
+      },
+      {
+        "slug": "patient-silence",
+        "texto": "Puede esperar durante mucho tiempo sin impacientarse."
+      }
+    ]
+  },
+  { "slug": "bashful",
+    "nombre": "Mansa",
+    "rasgos": [
+      {
+        "slug": "looks-away",
+        "texto": "Aparta la mirada cuando se siente observado."
+      },
+      {
+        "slug": "gentle-greeting",
+        "texto": "Saluda con mucha delicadeza."
+      },
+      {
+        "slug": "slow-confidence",
+        "texto": "Necesita tiempo para ganar confianza."
+      },
+      {
+        "slug": "likes-kindness",
+        "texto": "Responde muy bien al trato amable."
+      },
+      {
+        "slug": "careful-approach",
+        "texto": "Se acerca lentamente a lo desconocido."
+      },
+      {
+        "slug": "avoids-arguments",
+        "texto": "Prefiere mantenerse al margen de los conflictos."
+      },
+      {
+        "slug": "soft-expression",
+        "texto": "Tiene una expresión tranquila y amable."
+      },
+      {
+        "slug": "warm-heart",
+        "texto": "Es muy afectuoso con quienes aprecia."
+      }
+    ]
+  },
+  { "slug": "rash",
+    "nombre": "Alocada",
+    "rasgos": [
+      {
+        "slug": "acts-first",
+        "texto": "Suele actuar antes de pensar."
+      },
+      {
+        "slug": "fearless-jump",
+        "texto": "Se lanza a explorar sin dudar."
+      },
+      {
+        "slug": "impulsive",
+        "texto": "Le cuesta contener su entusiasmo."
+      },
+      {
+        "slug": "always-curious",
+        "texto": "Siempre quiere descubrir algo nuevo."
+      },
+      {
+        "slug": "restless-spirit",
+        "texto": "Tiene dificultades para quedarse quieto."
+      },
+      {
+        "slug": "unexpected-ideas",
+        "texto": "Siempre parece tener una idea inesperada."
+      },
+      {
+        "slug": "laughs-at-mistakes",
+        "texto": "No parece preocuparse demasiado por equivocarse."
+      },
+      {
+        "slug": "loves-adventure",
+        "texto": "Disfruta viviendo nuevas aventuras."
+      }
+    ]
+  },
+  { "slug": "calm",
+    "nombre": "Serena",
+    "rasgos": [
+      {
+        "slug": "peaceful-presence",
+        "texto": "Su sola presencia transmite tranquilidad."
+      },
+      {
+        "slug": "enjoys-silence",
+        "texto": "Disfruta de los momentos de silencio."
+      },
+      {
+        "slug": "patient-gaze",
+        "texto": "Observa todo con una paciencia admirable."
+      },
+      {
+        "slug": "never-rushes",
+        "texto": "Nunca parece tener prisa."
+      },
+      {
+        "slug": "steady-heart",
+        "texto": "Mantiene la calma incluso bajo presión."
+      },
+      {
+        "slug": "likes-sunsets",
+        "texto": "Parece disfrutar contemplando el horizonte."
+      },
+      {
+        "slug": "gentle-rest",
+        "texto": "Descansa siempre en los lugares más tranquilos."
+      },
+      {
+        "slug": "calms-others",
+        "texto": "Su tranquilidad suele contagiar a los demás."
+      }
+    ]
+  },
+  { "slug": "gentle",
+    "nombre": "Amable",
+    "rasgos": [
+      {
+        "slug": "kind-nature",
+        "texto": "Siempre trata con delicadeza a los demás."
+      },
+      {
+        "slug": "helps-small",
+        "texto": "Suele ayudar a quien parece necesitarlo."
+      },
+      {
+        "slug": "shares-space",
+        "texto": "Le gusta descansar acompañado."
+      },
+      {
+        "slug": "careful-touch",
+        "texto": "Tiene mucho cuidado para no hacer daño."
+      },
+      {
+        "slug": "friendly-heart",
+        "texto": "Hace amistades con facilidad."
+      },
+      {
+        "slug": "comforts-others",
+        "texto": "Parece preocuparse por el bienestar ajeno."
+      },
+      {
+        "slug": "patient-companion",
+        "texto": "Tiene una paciencia casi infinita."
+      },
+      {
+        "slug": "warm-smile",
+        "texto": "Siempre parece recibir a los demás con afecto."
+      }
+    ]
+  },
+  { "slug": "careful",
+    "nombre": "Cauta",
+    "rasgos": [
+      {
+        "slug": "checks-surroundings",
+        "texto": "Siempre observa los alrededores antes de avanzar."
+      },
+      {
+        "slug": "careful-step",
+        "texto": "Da cada paso con mucha atención."
+      },
+      {
+        "slug": "plans-ahead",
+        "texto": "Parece pensar antes de actuar."
+      },
+      {
+        "slug": "avoids-trouble",
+        "texto": "Intenta mantenerse lejos de los problemas."
+      },
+      {
+        "slug": "studies-objects",
+        "texto": "Examina con detenimiento todo lo que encuentra."
+      },
+      {
+        "slug": "slow-trust",
+        "texto": "Necesita tiempo antes de confiar."
+      },
+      {
+        "slug": "always-alert",
+        "texto": "Parece mantenerse siempre alerta."
+      },
+      {
+        "slug": "likes-routine",
+        "texto": "Se siente cómodo siguiendo hábitos conocidos."
+      }
+    ]
+  },
+  { "slug": "sassy",
+    "nombre": "Grosera",
+    "rasgos": [
+      {
+        "slug": "independent-spirit",
+        "texto": "Le gusta hacer las cosas a su manera."
+      },
+      {
+        "slug": "ignores-orders",
+        "texto": "A veces tarda en obedecer si no entiende el motivo."
+      },
+      {
+        "slug": "confident-look",
+        "texto": "Siempre parece muy seguro de sí mismo."
+      },
+      {
+        "slug": "likes-challenge",
+        "texto": "Disfruta demostrando de lo que es capaz."
+      },
+      {
+        "slug": "stubborn-pride",
+        "texto": "Le cuesta admitir cuando se equivoca."
+      },
+      {
+        "slug": "acts-confident",
+        "texto": "Rara vez muestra inseguridad."
+      },
+      {
+        "slug": "protects-pride",
+        "texto": "Parece muy orgulloso de sus logros."
+      },
+      {
+        "slug": "stands-alone",
+        "texto": "No le importa seguir su propio camino."
+      }
+    ]
+  },
+  { "slug": "quirky",
+    "nombre": "Rara",
+    "rasgos": [
+      {
+        "slug": "strange-habits",
+        "texto": "Tiene costumbres bastante peculiares."
+      },
+      {
+        "slug": "random-curiosity",
+        "texto": "A veces se interesa por las cosas más inesperadas."
+      },
+      {
+        "slug": "unexpected-actions",
+        "texto": "Es difícil adivinar qué hará después."
+      },
+      {
+        "slug": "odd-collection",
+        "texto": "Le gusta guardar objetos sin ningún motivo aparente."
+      },
+      {
+        "slug": "talks-alone",
+        "texto": "Parece entretenerse incluso cuando está solo."
+      },
+      {
+        "slug": "changes-mind",
+        "texto": "Puede cambiar de idea de un momento a otro."
+      },
+      {
+        "slug": "unique-routine",
+        "texto": "Tiene pequeñas manías que lo hacen único."
+      },
+      {
+        "slug": "surprising-behaviour",
+        "texto": "Siempre consigue sorprender a quienes lo rodean."
+      }
+    ]
+  }
+]

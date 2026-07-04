@@ -1,0 +1,17 @@
+{
+  "uid": "TSJ6NPD2",
+  "speciesSlug": "pikachu",
+  "form": "normal",
+  "apodo": "",
+  "sexo": "M",
+  "naturaleza": "mild",
+  "rasgo": "comforts-others",
+  "nivel": 5,
+  "abilitySlug": "static",
+  "moveSlug": [
+    "electro-ball",
+    "feint",
+    "spark",
+    "agility"
+  ]
+}

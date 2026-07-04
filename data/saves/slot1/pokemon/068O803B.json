@@ -1,0 +1,17 @@
+{
+  "uid": "068O803B",
+  "speciesSlug": "charizard",
+  "form": "normal",
+  "apodo": "",
+  "sexo": "F",
+  "naturaleza": "careful",
+  "rasgo": "likes-routine",
+  "nivel": 5,
+  "abilitySlug": "blaze",
+  "moveSlug": [
+    "smokescreen",
+    "dragon-breath",
+    "fire-fang",
+    "slash"
+  ]
+}

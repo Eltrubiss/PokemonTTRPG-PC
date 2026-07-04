@@ -1,3 +1,4 @@
+import "../src/platform/node/register.js";
 import { SaveManager } from "../src/core/saveManager.js";
 const saves = new SaveManager();
 
@@ -15,7 +16,7 @@ console.log("Guardado correctamente.");
 
 const loaded = await saves.load(
 
-    trainer.trainer.id
+    trainer.trainer.uid
 
 );
 

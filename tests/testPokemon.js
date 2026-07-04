@@ -1,3 +1,4 @@
+import "../src/platform/node/register.js";
 import { createPokemon }
 from "../src/models/pokemon.js";
 

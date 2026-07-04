@@ -1,3 +1,4 @@
+import "../src/platform/node/register.js";
 import {
     loadDatabase,
     getPokemon,

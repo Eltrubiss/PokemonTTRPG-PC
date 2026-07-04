@@ -1,9 +1,9 @@
-import fs from "fs/promises";
-import path from "path";
+import { exists, mkdir, read, write } from "../storage/storage.js";
+import { dirname, joinPath } from "../storage/paths.js";
 import { SAVES_PATH } from "../core/paths.js";
 
 function getPokemonPath( slot,uid ) {
-    return path.join(
+    return joinPath(
         SAVES_PATH,
         slot,
         "pokemon",
@@ -18,21 +18,17 @@ export async function savePokemon( slot,pokemon ) {
         pokemon.uid
     );
 
-    await fs.mkdir(
-        path.dirname(file),
-        { recursive: true }
+    await mkdir(
+        dirname(file)
     );
 
-    await fs.writeFile(
+    await write(
         file,
         JSON.stringify(
             pokemon,
             null,
             2
-        ),
-
-        "utf8"
-
+        )
     );
 
 }
@@ -48,9 +44,8 @@ export async function loadPokemon(
     );
 
     const text =
-        await fs.readFile(
-            file,
-            "utf8"
+        await read(
+            file
         );
 
     return JSON.parse(text);
@@ -61,22 +56,10 @@ export async function pokemonExists(
     slot,
     uid
 ) {
-
-    try {
-
-        await fs.access(
-            getPokemonPath(
-                slot,
-                uid
-            )
-        );
-
-        return true;
-
-    } catch {
-
-        return false;
-
-    }
-
+    return exists(
+        getPokemonPath(
+            slot,
+            uid
+        )
+    );
 }

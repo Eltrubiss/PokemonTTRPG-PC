@@ -1,3 +1,4 @@
+import "../src/platform/node/register.js";
 import { getBox } from "../src/systems/PCManager.js";
 
 const pokemon = await getBox(

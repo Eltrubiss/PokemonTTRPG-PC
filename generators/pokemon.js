@@ -1,4 +1,4 @@
-import fs from "fs/promises";
+import fs from "/fs/promises";
 import { buildSpeciesMap } from "../lib/pokemon/speciesMap.js";
 import { buildStats } from "../lib/pokemon/stats.js";
 import { buildTypes } from "../lib/pokemon/types.js";

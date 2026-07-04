@@ -1,4 +1,4 @@
-import fs from "fs/promises";
+import fs from "/fs/promises";
 import { getBestVersion } from "../lib/learnsets/version.js";
 import { buildSpeciesMap } from "../lib/pokemon/speciesMap.js";
 import { getFormSlug } from "../lib/pokemon/forms.js";

@@ -1,4 +1,4 @@
-import fs from "fs/promises";
+import fs from "/fs/promises";
 import { getMove, getMoveList, getType } from "../lib/api.js";
 import { getSpanishName } from "../lib/translator.js";
 

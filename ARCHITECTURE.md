@@ -50,7 +50,6 @@ Los builders únicamente descargan y construyen datos.
 
 Nunca contienen lógica específica del TTRPG.
 
-
 # Reglas de nomenclatura
 
 Variables del dominio:

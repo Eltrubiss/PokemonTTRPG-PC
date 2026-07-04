@@ -1,4 +1,5 @@
-import { loadPC, savePC, addPokemon } from "../src/systems/pcManager.js";
+import "../src/platform/node/register.js";
+import { loadPC, savePC, addPokemon } from "../src/systems/PCManager.js";
 import  {pretty } from "../src/systems/utils/debug.js";
 import { createPokemon } from "../src/systems/pokemonFactory.js";
 import { loadDatabase } from "../src/core/database.js";

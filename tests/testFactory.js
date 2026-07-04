@@ -1,3 +1,4 @@
+import "../src/platform/node/register.js";
 import { loadDatabase } from "../src/core/database.js";
 import { createPokemon } from "../src/systems/pokemonFactory.js";
 

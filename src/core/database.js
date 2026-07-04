@@ -1,11 +1,8 @@
-import fs from "fs/promises";
-
+import { read } from "../storage/storage.js";
 async function loadJson(path) {
 
     return JSON.parse(
-
-        await fs.readFile(path, "utf8")
-
+        await read(path)
     );
 
 }

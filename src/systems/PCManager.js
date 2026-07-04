@@ -1,12 +1,12 @@
-import fs from "fs/promises";
-import path from "path";
+import { mkdir, read, write } from "../storage/storage.js";
+import { dirname, joinPath } from "../storage/paths.js";
 import { BOX_SIZE } from "../core/constants.js";
 import { SAVES_PATH } from "../core/paths.js";
 import { loadPokemon } from "./pokemonStorage.js";
 
 function getPCPath(slot) {
 
-    return path.join(
+    return joinPath(
         SAVES_PATH,
         slot,
         "pc.json"
@@ -31,28 +31,25 @@ export async function loadPC(slot) {
     const file = getPCPath(slot);
     try {
 
-        const text = await fs.readFile(
-            file,
-            "utf8"
+        const text = await read(
+            file
         );
 
         return JSON.parse(text);
 
     } catch {
         const pc = createDefaultPC();
-        await fs.mkdir(
-            path.dirname(file),
-            { recursive: true }
+        await mkdir(
+            dirname(file)
         );
 
-        await fs.writeFile(
+        await write(
             file,
             JSON.stringify(
                 pc,
                 null,
                 2
-            ),
-            "utf8"
+            )
         );
 
         return pc;
@@ -63,19 +60,17 @@ export async function savePC( slot, pc ) {
 
     const file = getPCPath(slot);
 
-    await fs.mkdir(
-        path.dirname(file),
-        { recursive: true }
+    await mkdir(
+        dirname(file)
     );
 
-    await fs.writeFile(
+    await write(
         file,
         JSON.stringify(
             pc,
             null,
             2
-        ),
-        "utf8"
+        )
     );
 }
 
@@ -132,4 +127,5 @@ export async function getBox( slot, box = 0 ) {
             )
         )
     );
+
 }

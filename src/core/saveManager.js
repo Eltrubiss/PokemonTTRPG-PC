@@ -1,5 +1,4 @@
-import fs from "fs/promises";
-
+import { mkdir, read, write } from "../storage/storage.js";
 const SAVE_PATH = "./data/saves";
 
 export class SaveManager {
@@ -50,13 +49,10 @@ export class SaveManager {
     // -------------------------
 
     async save(data) {
-        await fs.mkdir(
-            SAVE_PATH,
-            { recursive: true }
-        );
+        await mkdir(SAVE_PATH);
 
         const uid = data.trainer.uid;
-        await fs.writeFile(
+        await write(
             `${SAVE_PATH}/${uid}.json`,
             JSON.stringify(
                 data,
@@ -73,12 +69,8 @@ export class SaveManager {
 
     async load(uid) {
 
-        const raw = await fs.readFile(
-
-            `${SAVE_PATH}/${uid}.json`,
-
-            "utf8"
-
+        const raw = await read(
+            `${SAVE_PATH}/${uid}.json`
         );
 
         return JSON.parse(raw);

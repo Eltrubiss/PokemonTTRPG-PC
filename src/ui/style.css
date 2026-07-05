@@ -1,0 +1,15 @@
+.pokemon-row {
+
+    cursor: pointer;
+
+    padding: 8px;
+
+}
+
+.pokemon-row.selected {
+
+    background: #d9ecff;
+
+    border: 1px solid #4a90e2;
+
+}

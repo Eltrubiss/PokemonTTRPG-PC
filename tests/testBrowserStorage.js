@@ -31,7 +31,9 @@ globalThis.fetch = async url => {
     };
 };
 
-configureBrowserPlatform();
+configureBrowserPlatform({
+    assetBaseUrl: "/PokemonTTRPG-PC/"
+});
 
 await write("data/saves/browser-test.json", "Saved OK");
 console.log(await exists("data/saves/browser-test.json"));

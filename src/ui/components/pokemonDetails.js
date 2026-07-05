@@ -1,173 +1,79 @@
-import {
-    title,
-    subtitle,
-    field,
-    separator,
-    element
-} from "../utils/elements.js";
+import { getAbility, getMove, getNature, getPokemon } from "../../core/database.js";
+import { element, field, separator, subtitle, title } from "../utils/elements.js";
 
-import {
-    getPokemon,
-    getAbility,
-    getNature,
-    getMove
-} from "../../core/database.js";
+export function createPokemonDetails(db, pokemon) {
+    if (!pokemon) {
+        return createEmptyDetails();
+    }
 
-export function createPokemonDetails(db,pokemon) {
+    const species = getPokemon(db, pokemon.speciesSlug);
+    const ability = getAbility(db, pokemon.abilitySlug);
+    const nature = pokemon.naturaleza ? getNature(db, pokemon.naturaleza) : null;
 
-    const species =
-        getPokemon(
-            db,
-            pokemon.speciesSlug
-        );
-
-    const ability =
-        getAbility(
-            db,
-            pokemon.abilitySlug
-        );
-
-    const nature =
-        pokemon.naturaleza
-            ? getNature(
-                db,
-                pokemon.naturaleza
-            )
-            : null;
-
-    const panel =
-        element(
-            "div",
-            {
-                className: "pokemon-details"
-            }
-        );
+    const panel = element("article", { className: "pokemon-details" });
+    const sprite = element("div", {
+        text: "◓",
+        className: "pokemon-details__sprite",
+        ariaLabel: "Sprite pendiente"
+    });
 
     panel.append(
-        title(species.nombre),
-
-        field(
-            "Nivel",
-            pokemon.nivel
-        ),
-
-        field(
-            "Sexo",
-            formatGender(
-                pokemon.sexo
-            )
-        ),
-
-        field(
-            "Naturaleza",
-            nature?.nombre ?? "-"
-        ),
-
-        field(
-            "Habilidad",
-            ability?.nombre ?? "-"
-        ),
-
+        sprite,
+        title(pokemon.apodo || species?.nombre || pokemon.speciesSlug || "Pokémon"),
+        field("Especie", species?.nombre ?? pokemon.speciesSlug),
+        field("Nivel", pokemon.nivel),
+        field("Sexo", formatGender(pokemon.sexo)),
+        field("Naturaleza", nature?.nombre ?? "-"),
+        field("Rasgo", getTraitText(nature, pokemon.rasgo)),
+        field("Habilidad", ability?.nombre ?? pokemon.abilitySlug ?? "-"),
         separator(),
-
-        subtitle(
-            "Movimientos"
-        )
-
-    );
-
-    panel.append(
-
-        ...createMoveList(
-            db,
-            pokemon.moveSlug
-        )
-
+        subtitle("Movimientos"),
+        createMoveList(db, pokemon.moveSlug ?? [])
     );
 
     return panel;
-
 }
 
-function createMoveList(db,moveSlugs) {
+function createEmptyDetails() {
+    const panel = element("article", { className: "pokemon-details pokemon-details--empty" });
+
+    panel.append(
+        element("div", { text: "◌", className: "pokemon-details__sprite" }),
+        title("Selecciona un Pokémon"),
+        field("Estado", "Sin selección"),
+        field("Acción", "Elige un Pokémon de la caja para ver sus datos.")
+    );
+
+    return panel;
+}
+
+function createMoveList(db, moveSlugs) {
+    const list = element("div", { className: "move-list" });
+
     if (!moveSlugs.length) {
-        return [
-            field(
-                "",
-                "Sin movimientos"
-            )
-        ];
+        list.append(field("", "Sin movimientos"));
+        return list;
     }
 
-    return moveSlugs.map(
-        slug => {
-            const move =
-                getMove(
-                    db,
-                    slug
-                );
-            return field(
-                "•",
-                move?.nombre ?? slug
-            );
-        }
-    );
+    for (const slug of moveSlugs) {
+        const move = getMove(db, slug);
+        list.append(field("•", move?.nombre ?? slug));
+    }
+
+    return list;
+}
+
+function getTraitText(nature, traitSlug) {
+    if (!nature || !traitSlug) return "-";
+
+    const trait = nature.rasgos?.find(candidate => candidate.slug === traitSlug);
+    return trait?.texto ?? traitSlug;
 }
 
 function formatGender(gender) {
-
     switch (gender) {
-
-        case "M":
-            return "♂";
-
-        case "F":
-            return "♀";
-
-        default:
-            return "-";
-
+        case "M": return "♂";
+        case "F": return "♀";
+        default: return "-";
     }
-
-}
-
-function getTraitText(
-    nature,
-    traitSlug
-) {
-
-    if (!nature)
-        return "-";
-
-    const trait =
-        nature.rasgos.find(
-            trait =>
-                trait.slug === traitSlug
-
-        );
-
-    return trait?.texto ?? "-";
-}
-
-function createMoveList(db,moveSlugs) {
-
-    if (!moveSlugs.length) {
-        return [
-            field(
-                "",
-                "Sin movimientos"
-            )
-        ];
-    }
-
-    return moveSlugs.map(
-        slug => {
-            const move =
-                getMove(db,slug);
-            return field(
-                "•",
-                move?.nombre ?? slug
-            );
-        }
-    );
 }

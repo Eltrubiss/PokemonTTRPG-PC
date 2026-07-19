@@ -1,66 +1,54 @@
-import { getPokemon } from "../../core/database.js";
-import { getNature } from "../../core/database.js";
+import { getNature, getPokemon } from "../../core/database.js";
+import { element } from "../utils/elements.js";
 
-
-export function createPokemonRow(db, pokemon) {
-    console.log("createPokemonRow()");
-    const species = getPokemon(
-        db,
-        pokemon.speciesSlug
-    );
-
-    const row = document.createElement("div");
-
-    row.className = "pokemon-row";
-    row.dataset.uid = pokemon.uid;
-
-    const gender = formatGender(
-        pokemon.sexo
-    );
-
+export function createPokemonRow(db, pokemon, options = {}) {
+    const species = getPokemon(db, pokemon.speciesSlug);
     const nature = pokemon.naturaleza
-        ? getNature(
-            db,
-            pokemon.naturaleza
-        )?.nombre
+        ? getNature(db, pokemon.naturaleza)?.nombre
         : "-";
 
-    row.innerHTML = `
-        <div class="pokemon-name">
-            ${species.nombre}
-        </div>
+    const row = element("button", {
+        type: "button",
+        className: options.selected
+            ? "pokemon-row selected"
+            : "pokemon-row",
+        dataset: { uid: pokemon.uid },
+        ariaLabel: `Seleccionar ${getDisplayName(species, pokemon)}`
+    });
 
-        <div class="pokemon-info">
-            ${gender} Lv.${pokemon.nivel}
-        </div>
-
-        <div class="pokemon-nature">
-            ${nature}
-        </div>
-    `;
+    row.append(
+        element("span", {
+            text: getDisplayName(species, pokemon),
+            className: "pokemon-row__name"
+        }),
+        element("span", {
+            text: `${formatGender(pokemon.sexo)} Lv.${pokemon.nivel ?? "-"}`.trim(),
+            className: "pokemon-row__meta"
+        }),
+        element("span", {
+            text: nature ?? "-",
+            className: "pokemon-row__nature"
+        })
+    );
 
     row.addEventListener("click", () => {
-        row.dispatchEvent(
-            new CustomEvent("pokemon-selected",
-                {
-                    bubbles: true,
-                    detail: {uid: pokemon.uid}
-                }
-            )
-        );
+        row.dispatchEvent(new CustomEvent("pokemon-selected", {
+            bubbles: true,
+            detail: { uid: pokemon.uid }
+        }));
     });
 
     return row;
+}
 
+function getDisplayName(species, pokemon) {
+    return pokemon.apodo || species?.nombre || pokemon.speciesSlug || "Pokémon";
 }
 
 function formatGender(sexo) {
     switch (sexo) {
-        case "M":
-            return "♂";
-        case "F":
-            return "♀";
-        default:
-            return "";
+        case "M": return "♂";
+        case "F": return "♀";
+        default: return "-";
     }
 }

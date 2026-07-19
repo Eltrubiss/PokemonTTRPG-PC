@@ -1,3 +1,3 @@
-import { configureNodePlatform } from "./index.js";
+import { configureNodePlatform } from "../platform/node/index.js";
 
 configureNodePlatform();

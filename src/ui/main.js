@@ -1,63 +1,61 @@
 import "../platform/browser/register.js";
 import { loadDatabase } from "../core/database.js";
-import { createPokemon } from "../systems/pokemonFactory.js";
-import { savePokemon } from "../systems/pokemonStorage.js";
-import { addPokemon, getBox } from "../systems/pcManager.js";
+import { getBox, loadPC } from "../systems/PCManager.js";
+import { createAppShell } from "./components/appShell.js";
 import { createPokemonRow } from "./components/pokemonRow.js";
+import { element } from "./utils/elements.js";
+
+const DEFAULT_SLOT = "slot1";
 
 const db = await loadDatabase();
-const SLOT = "slot1";
-const pokemonList = document.getElementById("pokemon-list");
-const createButton = document.getElementById("create-pokemon");
-let selectedPokemonUid = null;
+const state = {
+    boxName: "Caja 1",
+    pokemon: []
+};
 
+document.body.replaceChildren(createAppShell());
 
-async function renderBox() {
-    const box = await getBox(SLOT);
+const pokemonGrid = document.getElementById("pokemon-grid");
+const boxSummary = document.getElementById("box-summary");
+const currentBoxName = document.getElementById("current-box-name");
 
-    pokemonList.innerHTML = "";
+await loadCurrentBox(DEFAULT_SLOT);
+renderPCBox();
 
-    for (const pokemon of box) {
-        const row = createPokemonRow(
-            db,
-            pokemon
-        );
-        pokemonList.appendChild(
-            row
-        );
-    }
+async function loadCurrentBox(slot) {
+    const pc = await loadPC(slot);
+    const currentBoxIndex = pc.currentBox ?? 0;
+    const currentBox = pc.boxes[currentBoxIndex];
+
+    state.boxName = currentBox?.name ?? `Caja ${currentBoxIndex + 1}`;
+    state.pokemon = await getBox(slot, currentBoxIndex);
 }
 
+function renderPCBox() {
+    renderBoxSummary();
+    renderPokemonGrid();
+}
 
+function renderBoxSummary() {
+    currentBoxName.textContent = state.boxName;
+    boxSummary.replaceChildren(
+        element("strong", { text: state.boxName }),
+        element("span", { text: `${state.pokemon.length} Pokémon detectados` })
+    );
+}
 
-// Escuchar selección de Pokémon
+function renderPokemonGrid() {
+    pokemonGrid.replaceChildren();
 
-pokemonList.addEventListener(
-    "pokemon-selected",
-
-    event => {
-        selectedPokemonUid = event.detail.uid;
-
-        console.log(
-            "Seleccionado:",
-            selectedPokemonUid
-        );
-        document
-            .querySelectorAll(".pokemon-row")
-            .forEach(row =>
-                row.classList.remove("selected")
-            );
-
-        const selectedRow =
-            document.querySelector(
-                `[data-uid="${selectedPokemonUid}"]`
-            );
-        selectedRow?.classList.add(
-            "selected"
-        );
+    if (!state.pokemon.length) {
+        pokemonGrid.append(element("p", {
+            text: "Esta caja no tiene Pokémon almacenados.",
+            className: "empty-state"
+        }));
+        return;
     }
-);
 
-
-
-await renderBox();
+    for (const pokemon of state.pokemon) {
+        pokemonGrid.append(createPokemonRow(db, pokemon));
+    }
+}

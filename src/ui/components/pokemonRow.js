@@ -1,66 +1,42 @@
 import { getPokemon } from "../../core/database.js";
-import { getNature } from "../../core/database.js";
-
+import { element } from "../utils/elements.js";
 
 export function createPokemonRow(db, pokemon) {
-    console.log("createPokemonRow()");
-    const species = getPokemon(
-        db,
-        pokemon.speciesSlug
-    );
+    const species = getPokemon(db, pokemon.speciesSlug);
+    const displayName = getDisplayName(species, pokemon);
 
-    const row = document.createElement("div");
-
-    row.className = "pokemon-row";
-    row.dataset.uid = pokemon.uid;
-
-    const gender = formatGender(
-        pokemon.sexo
-    );
-
-    const nature = pokemon.naturaleza
-        ? getNature(
-            db,
-            pokemon.naturaleza
-        )?.nombre
-        : "-";
-
-    row.innerHTML = `
-        <div class="pokemon-name">
-            ${species.nombre}
-        </div>
-
-        <div class="pokemon-info">
-            ${gender} Lv.${pokemon.nivel}
-        </div>
-
-        <div class="pokemon-nature">
-            ${nature}
-        </div>
-    `;
-
-    row.addEventListener("click", () => {
-        row.dispatchEvent(
-            new CustomEvent("pokemon-selected",
-                {
-                    bubbles: true,
-                    detail: {uid: pokemon.uid}
-                }
-            )
-        );
+    const card = element("button", {
+        type: "button",
+        className: "pokemon-card",
+        dataset: { uid: pokemon.uid },
+        ariaLabel: displayName
     });
 
-    return row;
+    card.append(
+        createSpritePlaceholder(displayName),
+        element("span", {
+            text: displayName,
+            className: "pokemon-card__name"
+        }),
+        element("span", {
+            text: `Lv.${pokemon.nivel ?? "-"}`,
+            className: "pokemon-card__level"
+        })
+    );
 
+    return card;
 }
 
-function formatGender(sexo) {
-    switch (sexo) {
-        case "M":
-            return "♂";
-        case "F":
-            return "♀";
-        default:
-            return "";
-    }
+function createSpritePlaceholder(displayName) {
+    const placeholder = element("span", {
+        text: "◓",
+        className: "pokemon-card__sprite pokemon-card__sprite--placeholder",
+        ariaLabel: `Sprite no disponible para ${displayName}`
+    });
+
+    return placeholder;
+}
+
+function getDisplayName(species, pokemon) {
+    return pokemon.apodo || species?.nombre || pokemon.speciesSlug || "Pokémon";
 }

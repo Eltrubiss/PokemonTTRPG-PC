@@ -1,4 +1,4 @@
-import "../src/platform/node/register.js";
+import "../src/platform/browser/register.js";
 import { loadDatabase } from "../src/core/database.js";
 import { createPokemon } from "../src/systems/pokemonFactory.js";
 
@@ -7,8 +7,8 @@ const db = await loadDatabase();
 
 const pokemon = createPokemon(
     db,
-    "perrserker",
-    5
+    "golurk",
+    20
 );
 
 console.log(

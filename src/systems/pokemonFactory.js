@@ -35,7 +35,8 @@ export function createPokemon( db, speciesSlug, level) {
         naturaleza
     );
     console.log(
-        `====================================================\n
+        `\n
+        ====================================================\n
         Creando Pokémon ${speciesSlug} de nivel ${level}:\n
         Forma ${form}, género ${genero}, habilidad ${abilitySlug}, movimientos ${moveSlug}, naturaleza ${naturaleza} y rasgo ${rasgo}.\n
         ====================================================`

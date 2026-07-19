@@ -1,6 +1,7 @@
 const STORAGE_PREFIX = "pokemon-ttrpg-pc";
 
 let assetBaseUrl = "/";
+const fallbackStorage = new Map();
 
 function normalizePath(path) {
     return String(path).replace(/^\.\//, "").replace(/\\/g, "/");
@@ -25,6 +26,31 @@ function getAssetUrl(path) {
     return `${assetBaseUrl}${normalized}`;
 }
 
+function getStorage() {
+    const storage = globalThis.localStorage;
+
+    if (
+        storage &&
+        typeof storage.getItem === "function" &&
+        typeof storage.setItem === "function" &&
+        typeof storage.removeItem === "function"
+    ) {
+        return storage;
+    }
+
+    return {
+        getItem(key) {
+            return fallbackStorage.has(key) ? fallbackStorage.get(key) : null;
+        },
+        setItem(key, value) {
+            fallbackStorage.set(key, String(value));
+        },
+        removeItem(key) {
+            fallbackStorage.delete(key);
+        }
+    };
+}
+
 export function configureBrowserStorage(options = {}) {
     assetBaseUrl = normalizeBaseUrl(
         options.assetBaseUrl ?? "/"
@@ -34,7 +60,9 @@ export function configureBrowserStorage(options = {}) {
 
 export async function read(path) {
     const normalized = normalizePath(path);
-    const saved = globalThis.localStorage.getItem(
+    const storage = getStorage();
+
+    const saved = storage.getItem(
         getKey(normalized)
     );
 
@@ -55,7 +83,7 @@ export async function read(path) {
 }
 
 export async function write(path, data) {
-    globalThis.localStorage.setItem(
+    getStorage().setItem(
         getKey(path),
         data
     );
@@ -63,8 +91,9 @@ export async function write(path, data) {
 
 export async function exists(path) {
     const normalized = normalizePath(path);
+    const storage = getStorage();
 
-    if (globalThis.localStorage.getItem(getKey(normalized)) !== null) {
+    if (storage.getItem(getKey(normalized)) !== null) {
         return true;
     }
 
@@ -85,7 +114,7 @@ export async function mkdir() {
 }
 
 export async function remove(path) {
-    globalThis.localStorage.removeItem(
+    getStorage().removeItem(
         getKey(path)
     );
 }

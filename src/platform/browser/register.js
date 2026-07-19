@@ -12,8 +12,22 @@ function hasBrowserStorage() {
     );
 }
 
+function getBrowserAssetBaseUrl() {
+    if (typeof document !== "undefined" && document.baseURI) {
+        return new URL("./", document.baseURI).pathname;
+    }
+
+    if (typeof location !== "undefined") {
+        return new URL("./", location.href).pathname;
+    }
+
+    return "/";
+}
+
 if (typeof window !== "undefined" || hasBrowserStorage()) {
-    configureBrowserPlatform();
+    configureBrowserPlatform({
+        assetBaseUrl: getBrowserAssetBaseUrl()
+    });
 } else {
     configureNodePlatform();
 }
